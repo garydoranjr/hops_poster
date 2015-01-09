@@ -6,7 +6,7 @@
     - bittering
   description: "Said to be citrusy, orange flavored. A good compliment hop to Targets. Good dual purpose hop."
   uses:
-    - English Style IPA
+    - English Style IPAs
     - Ales
   substitutes:
     - Challenger
@@ -24,3 +24,59 @@
   substitutes:
     - Amarillo
     - Cascade
+
+- name: Amarillo
+  alpha: [8, 10]
+  countries:
+    - US
+  types:
+    - bittering
+    - flavor
+  description: "Popular American mid-range alpha acid variety with a unique and distinct aroma. It has a flowery, citrus-like aroma; more orange than grapefruit."
+  uses:
+    - Pale Ales
+    - IPAs
+    - Porters
+  substitutes:
+    - Cascade
+    - Centennial
+
+- name: Apollo
+  alpha: [18, 21]
+  countries:
+    - US
+  types:
+    - bittering
+  description: "Characterized by its exceptionally high percentage of Alpha Acids, it has excellent storage stability. It has citrus notes, with emphasis on orange. It is resiny, and spicy."
+  uses:
+    - Big Hop Profile Beers
+  substitutes:
+    - Magnum
+    - Columbus
+
+- name: Aquila
+  alpha: [6, 7.5]
+  countries:
+    - US
+  types:
+    - finishing
+  description: "Recently developed as an aroma hop originating in the US."
+  uses:
+    - American Ales
+  substitutes:
+    - Cluster
+    - Galena
+
+- name: Banner
+  alpha: [9, 11]
+  countries: []
+  types:
+    - bittering
+    - flavor
+  description: "Similar to Aquila and Cluster with good yield."
+  uses:
+    - American Lagers
+  substitutes:
+    - Aquila
+    - Cluster
+    - Galena
