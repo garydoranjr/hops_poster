@@ -1,0 +1,26 @@
+- name: Admiral
+  alpha: [11, 15]
+  countries:
+    - UK
+  types:
+    - bittering
+  description: "Said to be citrusy, orange flavored. A good compliment hop to Targets. Good dual purpose hop."
+  uses:
+    - English Style IPA
+    - Ales
+  substitutes:
+    - Challenger
+    - Northdown
+
+- name: Anthanum
+  alpha: [3.5, 6]
+  countries:
+    - US
+  types:
+    - finishing
+  description: "This hop is used for its aromatic properties and moderate bittering. It has aromas that are citrusy (Grapefruit), earthy, and floral."
+  uses:
+    - American Ales
+  substitutes:
+    - Amarillo
+    - Cascade
