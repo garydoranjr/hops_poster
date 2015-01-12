@@ -92,7 +92,7 @@
   substitutes:
     - Bullion
     - Northern Brewer
-    - Galena 
+    - Galena
 
 - name: Bravo
   alpha: [14, 17]
@@ -124,7 +124,7 @@
   substitutes:
     - Bullion
     - Northern Brewer
-    - Galena 
+    - Galena
     - Bramling Cross
 
 - name: Bullion
@@ -140,7 +140,7 @@
   substitutes:
     - "Brewer's Gold"
     - Northern Brewer
-    - Galena 
+    - Galena
     - Bramling Cross
     - Mt. Rainier
 
