@@ -187,7 +187,7 @@ Used For: Finishing, Dry hopping. English ales, especially Pale ales, Porters,
 Stouts.
 Substitutes: Willamette, East Kent Goldings, Styrian Goldings.
  
-GALAXY_[PELLET]
+GALAXY
 11-13%  All Purpose
 Australian high alpha dual purpose  hop with a big unique aroma, described as a
 combination of citrus and passionfruit.  Used in Widmer Galaxy Hopped Barley

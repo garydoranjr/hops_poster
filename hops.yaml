@@ -110,7 +110,7 @@
     - Tomahawk
     - Zeus
 
-- name: Brewers Gold
+- name: "Brewer's Gold"
   alpha: [6, 9]
   countries:
     - UK
@@ -138,8 +138,504 @@
     - Stouts
     - Dark Ales
   substitutes:
-    - Brewers Gold
+    - "Brewer's Gold"
     - Northern Brewer
     - Galena 
     - Bramling Cross
     - Mt. Rainier
+
+- name: Calypso
+  alpha: [10, 12]
+  countries: []
+  types:
+    - dual purpose
+  description: "Pleasant, fruity aroma, with hints of pear and apple."
+  uses:
+    - Ales
+    - Stouts
+    - Barley Wines
+  substitutes: []
+
+- name: Cascade
+  alpha: [4, 7]
+  countries: []
+  types:
+    - all purpose
+  description: "Flowery, citrus, and spice with grapefruit the noticeable fragrance quite often. This medium aroma balances the low bittering value. Derived from a cross between fuggles and the Russian hop Serebrianker. Very popular hop among craft brewers. Good for flavor and aroma, but an acceptable bittering hop."
+  uses:
+    - Pale Ales
+    - IPAs
+    - Porters
+  substitutes:
+    - Amarillo
+    - Centennial
+    - Ahtanum
+
+- name: Centennial
+  alpha: [9, 11]
+  countries:
+    - US
+  types:
+    - bittering
+    - aroma
+  description: "Flowers and citrus most evident. A medium aroma with mid-to-high bittering value makes it a dual purpose choice. Cross between Brewer's Gold and a selected USDA male."
+  uses:
+    - Medium American Ales
+    - Dark American Ales
+  substitutes:
+    - Amarillo
+    - Cascade
+
+- name: Challenger
+  alpha: [7, 10]
+  countries:
+    - UK
+  types:
+    - all purpose
+  description: "Mild to Moderate aroma, quite spicy. One of the few recognized all-purpose hops combining moderate amounts of alpha acid with a good kettle aroma."
+  uses:
+    - British Ales
+    - British Lagers
+  substitutes:
+    - Northern Brewer
+    - Perle
+
+- name: Chinook
+  alpha: [11, 13]
+  countries: []
+  types:
+    - bittering
+  description: "Mild to medium-heavy, spicy, distinct piney aroma like a pine forest washed with exotic spice and infused with grapefruit. This alluring aroma and a high bittering value has gained this hop full respect from craft and major brewers. Cross between Petham Golding and USDA select male."
+  uses:
+    - Pale Ales
+    - Lagers
+  substitutes:
+    - Eroica
+    - Galena
+    - Cluster
+    - Nugget
+    - Bullion
+
+- name: Citra
+  alpha: [10, 11]
+  countries: []
+  types:
+    - all purpose
+  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfrüh, Tettnanger, EKG hybrid with distinctive citrus aroma."
+  uses:
+    - Pale Ales
+    - IPAs
+  substitutes:
+    - Simcoe
+
+- name: Cluster
+  alpha: [5.5, 8.5]
+  countries: []
+  types:
+    - all purpose
+  description: "Floral aroma, excellent general-purpose hop with medium and well-balanced bittering potential and no undesirable aroma properties. Good for Dark beers."
+  uses:
+    - American Lagers
+  substitutes:
+    - Eroica
+    - Chinook
+    - Galena
+
+- name: Columbia
+  alpha: [12, 16]
+  countries: []
+  types:
+    - bittering
+  description: "A Centenial substitute. Very pungent, aromatic, and clean tasting."
+  uses:
+    - Ambers
+    - Pale Ales
+    - Porters
+    - Stouts
+  substitutes:
+    - Centennial
+    - Eroica
+    - Chinook
+
+- name: Columbus
+  alpha: [13, 16]
+  countries: []
+  types:
+    - all purpose
+  description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal, suprisingly pleasant aroma."
+  uses:
+    - Pale Ales
+    - American IPAs
+    - Stouts
+    - Lagers
+  substitutes:
+    - Centennial
+    - Chinook
+    - Galena
+    - Nugget
+    - Zeus
+    - Tomahawk
+
+- name: Comet
+  alpha: [8, 11]
+  countries:
+    - US
+  types:
+    - bittering
+  description: "A rare US hop. Used primarily for their bittering character. Wild American aroma that is objectionable to some brewers, Comet today is no longer grown commercially."
+  uses:
+    - Ales
+    - Lagers
+  substitutes:
+    - Galena
+
+- name: Crystal
+  alpha: [3, 5]
+  countries: []
+  types:
+    - finishing
+  description: "Mild and pleasant, a delicate blend of spices and flowers. Low bittering value adds to the charm. Known as a triploid, three hops contributing characteristics: Cascade, Brewer's Gold and Early Green."
+  uses:
+    - German-style Pilsners
+    - Lagers
+    - Koelsch
+    - ESB
+    - Belgian Ales
+  substitutes:
+    - Liberty
+    - Mt. Hood
+    - German Hallertau
+    - Ultra
+
+- name: Delta
+  alpha: [6.5, 6.5]
+  countries: []
+  types:
+    - dual purpose
+  description: "Aroma Type Hop Mild and pleasant, slightly spicy with a hint of citrus. Still experimental."
+  uses:
+    - American Pale Ales
+    - American IPAs
+  substitutes: []
+
+- name: Eroica
+  alpha: [11, 13]
+  countries: []
+  types:
+    - all purpose
+  description: "Aroma is quite strong, but not unpleasant. Better aroma than many high alpha acid hops. Suitable for general bittering. Bred by open pollination of Brewer's Gold."
+  uses:
+    - Pale Ales
+    - Dark Ales
+    - Stouts
+  substitutes:
+    - Chinook
+    - Cluster
+    - Galena
+    - Nugget
+
+- name: First Gold
+  alpha: [6, 9]
+  countries:
+    - UK
+  types:
+    - all purpose
+  description: "Pleasant citrus/apricot nose that is outstanding in ESBs, IPAs, or fruit beers. Dwarf hop with fine English Golding character with higher alpha."
+  uses:
+    - English Ales
+    - Porters
+    - ESBs
+    - Fruit Beers
+  substitutes:
+    - Golding
+
+- name: Fuggle
+  alpha: [4, 5.5]
+  countries:
+    - UK
+  types:
+    - finishing
+  description: "Classic English aroma hop with moderate bittering value. Mild and pleasant, spicy, soft, woody, with some fruit tones. Also known over-seas as Styrian Golding."
+  uses:
+    - English Ales
+    - Pale Ales
+    - Porters
+    - Stouts
+  substitutes:
+    - Willamette
+    - Golding
+    - Kent Golding
+
+- name: Galaxy
+  alpha: [11, 13]
+  countries:
+    - Australia
+  types:
+    - all purpose
+  description: "Australian high alpha dual purpose hop with a big unique aroma, described as a combination of citrus and passionfruit. Used in Widmer Galaxy Hopped Barley Wine."
+  uses:
+    - Pale Ales
+    - IPAs
+    - Barley Wines
+  substitutes:
+    - Simcoe
+    - Citra
+    - Amarillo
+
+- name: Galena
+  alpha: [10, 12]
+  countries: []
+  types:
+    - bittering
+  description: "Medium aroma but pleasant hoppiness. Bred from Brewer's Gold by open pollination. Excellent high alpha acid hop with balanced bittering profiles paired with acceptable hop aroma."
+  uses:
+    - American Ales
+    - American Stouts
+    - American Lagers
+  substitutes:
+    - Nugget
+    - Cluster
+    - Chinook
+
+- name: Glacier
+  alpha: [5, 6]
+  countries: []
+  types:
+    - finishing
+  description: "Pleasant aroma of citrus mixed with sweet fruity of pear or apricot. Aroma seems to be the strong suit of this hop."
+  uses:
+    - American Ales
+    - ESBs
+  substitutes:
+    - Palisade
+
+- name: Golding
+  alpha: [4, 5]
+  countries:
+    - UK
+  types:
+    - finishing
+  description: "Refined Gentle, Fragrant and pleasant with flowery tones, that has produced some of England's best bitters."
+  uses:
+    - English Ales
+    - Belgian Ales
+  substitutes:
+    - Kent Golding
+    - Fuggle
+    - Willamette
+
+- name: Green Bullet
+  alpha: [9, 11]
+  countries:
+    - New Zealand
+  types:
+    - bittering
+  description: "A high alpha hop with fruity and resiny flavors and floral aromas, from New Zealand.  Considered a bittering variety typically for lagers, Green Bullet also carries a solid Styrian characteristic of subtle spiciness which finds it at home in a freshly drawn pint of Bitter or an Irish-style Dry Stout."
+  uses:
+    - Lagers
+  substitutes: []
+
+- name: Domestic Hallertau
+  alpha: [5, 6]
+  countries:
+    - Germany
+  types:
+    - finishing
+  description: "Named for its origins in the Hallertauer region of Germany, this is a noble aroma hop with ever-so-subtle flower and spice fragrances defining its ``\"{u}ber alles'' superiority."
+  uses:
+    - Stock Ales
+    - Altbiers
+    - Belgian Ales
+    - Continental Style Lagers
+    - Pilsners
+    - Bocks
+    - Lagers
+    - Wheats
+  substitutes:
+    - Mt. Hood
+    - Liberty
+    - Crystal
+
+- name: German Hallertau
+  alpha: [3.5, 5]
+  countries:
+    - Germany
+  types:
+    - finishing
+  description: "Traditionally a superior German aroma hop. Mild to semi-strong aroma, the most popular variety. Excellent flavor."
+  uses:
+    - Wheats
+    - Altbiers
+    - Pilsners
+    - Belgian Ales
+    - American Lagers
+    - German Lagers
+  substitutes:
+    - Mt. Hood
+    - Liberty
+    - Crystal
+
+- name: Hersbrucker Hallertau
+  alpha: [3, 5]
+  countries:
+    - Germany
+  types:
+    - finishing
+  description: "Drier, spicier than Hallertauer. Most important aroma variety in Germany."
+  uses:
+    - German Ales
+    - German Lagers
+  substitutes:
+    - Mt. Hood
+
+- name: Mittelfruh Hallertau
+  alpha: [3, 5]
+  countries:
+    - Germany
+  types:
+    - aroma
+  description: "Typical characteristics of a Hallertau; mild and pleasant aroma."
+  uses:
+    - Stock Ales
+    - Altbiers
+    - Belgian Ales
+    - Continental Style Lagers
+    - Pilsners
+    - Bocks
+    - Lagers
+    - Wheats
+  substitutes:
+    - Domestic Hallertau
+    - German Hallertau
+
+- name: Herald
+  alpha: [11, 13]
+  countries: []
+  types:
+    - bittering
+  description: "New high-alpha acid dwarf hop."
+  uses: []
+  substitutes: []
+
+- name: Horizon
+  alpha: [12, 14]
+  countries: []
+  types:
+    - bittering
+  description: "A cross between Brewers gold and German (probably Hallertau) aroma hops bred in Oregon."
+  uses:
+    - American Ales
+    - American Lagers
+  substitutes:
+    - Magnum
+
+- name: Huller
+  alpha: [4, 6]
+  countries: []
+  types:
+    - bittering
+    - aroma
+  description: "A universal hop for both bittering and aroma."
+  uses:
+    - German Ales
+    - German Lagers
+  substitutes: []
+
+- name: Kent Golding
+  alpha: [3, 5]
+  countries:
+    - UK
+  types:
+    - finishing
+  description: "Refined gentle, fragrant and pleasant with flowery tones. Traditional old English hop. Referred to as East Kent Goldings if grown in East Kent, Kent Goldings if grown in Mid-Kent, and Goldings if grown elsewhere."
+  uses:
+    - English Ales
+    - Belgian Ales
+  substitutes:
+    - Golding
+    - Fuggle
+    - Willamette
+
+- name: Liberty
+  alpha: [3, 5]
+  countries:
+    - US
+  types:
+    - finishing
+  description: "American cousin to Hallertau with very similar flower and spice characteristics, mild and pleasant, quite fine. Best used as a finishing hop in German-style lagers."
+  uses:
+    - American Ales
+    - German Ales
+    - Lagers
+    - Pilsners
+    - Bocks
+    - Koelsch
+  substitutes:
+    - German Hallertau
+    - Mt. Hood
+    - Crystal
+
+- name: Lublin
+  alpha: [3, 4.5]
+  countries:
+    - Poland
+  types:
+    - finishing
+  description: "Mild and typical of noble aroma types. Another source of the classical noble- aroma type hop with long and strong traditions. Widely believed to be a clone of Saaz."
+  uses: []
+  substitutes:
+    - Saaz
+    - Tettnang
+
+- name: Magnum
+  alpha: [12, 17]
+  countries:
+    - German
+  types:
+    - bittering
+  description: "A German thoroughbred with limited Pacific Northwest plantings. Prized for its high bittering value, the aromatic nature is one of spice and citrus, but is minimal compared to its big bittering."
+  uses:
+    - Pale Ales
+    - IPAs
+    - German Lagers
+  substitutes:
+    - Galena
+
+- name: Millenium
+  alpha: [14, 16]
+  countries: []
+  types:
+    - bittering
+  description: "Very similar to Nugget hops in aroma and flavor. Some descriptors included floral, resiny, and a bit spicy/herbal."
+  uses:
+    - American Ales
+  substitutes:
+    - Nugget
+    - Columbus
+
+- name: Motueka
+  alpha: [6.5, 7.5]
+  countries:
+    - New Zealand
+  types:
+    - all purpose
+  description: "An excellent hop in many applications from first kettle additions through to late. This hop offers a unique aroma and flavour making it suitable for producing bigger more traditional style Lagers, especially Bohemian Pilsener.  Excellent when employed in multiple additions from a single hop bill and sits well on the palate to balance speciality malt sweetness. An excellent variety for Belgian Ales and gives a real edge to Cask Bitter."
+  uses:
+    - Belgian Ales
+  substitutes: []
+
+- name: Mt. Hood
+  alpha: [5, 8]
+  countries: []
+  types:
+    - finishing
+  description: "Hybrid of Hallertau with similar mild flower/spice aroma characteristics with a hint more of the forest. ``Clean'' commonly describes it, with similarities to the German Hallertau and Hersbrucker varieties."
+  uses:
+    - American Ales
+    - American Lagers
+    - German Ales
+    - German Lagers
+  substitutes:
+    - German Hallertau
+    - Liberty
+    - Crystal
