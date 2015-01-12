@@ -80,3 +80,66 @@
     - Aquila
     - Cluster
     - Galena
+
+- name: Bramling Cross
+  alpha: [5, 8]
+  countries: []
+  types:
+    - all purpose
+  description: "Variety Bramling crossed with a male seedling from a Manitoba female. Blackcurrant, lemony aroma."
+  uses:
+    - Spiced Ales
+  substitutes:
+    - Bullion
+    - Northern Brewer
+    - Galena 
+
+- name: Bravo
+  alpha: [14, 17]
+  countries:
+    - US
+  types:
+    - bittering
+  description: "New Super High Alpha. The higher Co-Ho levels mean a not completely smooth bittering, but not as harsh as Chinook. (Its bittering properties are similar to Simcoe). Flavor and aroma are described as an earthy spice and herb, fruity and floral, so, I guess that it is different things to different people. It's a decendant of Zeus and Nugget."
+  uses:
+    - American IPAs
+    - American Pale Ales
+    - American Stouts
+  substitutes:
+    - Columbus
+    - Tomahawk
+    - Zeus
+
+- name: Brewers Gold
+  alpha: [6, 9]
+  countries:
+    - UK
+    - Canada
+  types:
+    - bittering
+  description: "Sibling of and similar to Bullion only maturing earlier and more disease resistant. English/wild Canadian cross. Pungent English character."
+  uses:
+    - Stouts
+    - Dark Ales
+  substitutes:
+    - Bullion
+    - Northern Brewer
+    - Galena 
+    - Bramling Cross
+
+- name: Bullion
+  alpha: [6.5, 9]
+  countries:
+    - UK
+  types:
+    - bittering
+  description: "Intense, black currant aroma, spicy and pungent. One of the earliest high alpha hops in the world. Raised in 1919 in England from a wild Manitoban female crossed with an English male hop."
+  uses:
+    - Stouts
+    - Dark Ales
+  substitutes:
+    - Brewers Gold
+    - Northern Brewer
+    - Galena 
+    - Bramling Cross
+    - Mt. Rainier
