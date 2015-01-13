@@ -221,7 +221,7 @@
   countries: []
   types:
     - all purpose
-  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfrüh, Tettnanger, EKG hybrid with distinctive citrus aroma."
+  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfruh, Tettnanger, EKG hybrid with distinctive citrus aroma."
   uses:
     - Pale Ales
     - IPAs
@@ -662,3 +662,62 @@
   uses: []
   substitutes:
     - Galena
+
+- name: New Zealand Hallertau
+  alpha: [8, 9]
+  countries:
+    - New Zealand
+  types:
+    - finishing
+  description: "Bred from the German Hallertau Mittelfruh, this aroma hop is characterized by woodsy, citrusy notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
+  uses:
+    - Organic Pilsners
+    - Lagers
+    - German Beers
+  substitutes:
+    - Mittelfruh Hallertau
+
+- name: Northdown
+  alpha: [7, 10]
+  countries:
+    - UK
+  types:
+    - dual purpose
+  description: "Mellow English higher alpha-acid hop. Similar to Northern Brewer, but with a better flavor and aroma than domestic Northern Brewer; A clean bittering hop."
+  uses:
+    - Heavier Ales
+    - Porters
+  substitutes:
+    - Northern Brewer
+    - Target
+
+- name: Northern Brewer
+  alpha: [7, 11]
+  countries: []
+  types:
+    - all purpose
+  description: "A true dual-purpose hop containing moderate amounts of alpha acids combined with an acceptable aroma profile. Neutral, clean aroma, woody with evergreen and mint overtones and slightly higher-than-average bittering value."
+  uses:
+    - English Ales
+    - ESBs
+    - Bitters
+    - Porters
+    - German Lagers
+    - Steam Beers
+  substitutes:
+    - Galena
+    - Perle
+
+- name: Nugget
+  alpha: [11, 16]
+  countries: []
+  types:
+    - all purpose
+  description: "Strong heavy and herbal, spicy aroma and high bittering value (along with desirable growing traits) has brought this hop variety to the forefront of the industry. Selected from a cross between Brewer's Gold and a high alpha male."
+  uses:
+    - Ales
+    - Stouts
+  substitutes:
+    - Chinook
+    - Galena
+    - Cluster
