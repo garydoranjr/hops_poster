@@ -721,3 +721,42 @@
     - Chinook
     - Galena
     - Cluster
+
+- name: Olympic
+  alpha: [11, 13]
+  countries: []
+  types:
+    - bittering
+  description: "Moderate aroma. Similar to Chinook and Brewers Gold."
+  uses:
+    - Dark Ales
+    - Stouts
+  substitutes:
+    - "Brewer's Gold"
+    - Chinook
+    - Galena
+
+- name: Omega
+  alpha: [9, 11]
+  countries: []
+  types:
+    - bittering
+  description: "A very new very bitter hop."
+  uses:
+    - Ales
+    - Stouts
+    - Lagers
+  substitutes: []
+
+- name: Orion
+  alpha: [6, 8]
+  countries: []
+  types:
+    - finishing
+    - flavor
+  description: "Classic Noble style, dual-use hop from Germany."
+  uses:
+    - German Ales
+    - German Lagers
+  substitutes:
+    - Noble
