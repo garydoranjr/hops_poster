@@ -639,3 +639,26 @@
     - German Hallertau
     - Liberty
     - Crystal
+
+- name: Nelson Sauvin
+  alpha: [12, 13]
+  countries:
+    - New Zealand
+  types:
+    - bittering
+  description: "Described to have a white wine fruitiness of ``crushed gooseberries.'' A hop that requires judicious application in the brew house, this truly unique dual-purpose variety can be used to produce big punchy Ales as well as subtle yet bitter Lagers. The fruitiness may be a little overpowering for the uninitiated, however those with a penchant for bold hop character will find several applications for this true brewer's hop."
+  uses:
+    - Ales
+    - Lagers
+  substitutes: []
+
+- name: Newport
+  alpha: [10, 17]
+  countries:
+    - US
+  types:
+    - bittering
+  description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfruh, Late Grape, Belgium 31, and Fuggle.  Newport hops were bred as a potential replacement to Galena based on their resistance to mildew. Widely used by the Rogue Brewery."
+  uses: []
+  substitutes:
+    - Galena
