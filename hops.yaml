@@ -246,7 +246,7 @@
   countries: []
   types:
     - bittering
-  description: "A Centenial substitute. Very pungent, aromatic, and clean tasting."
+  description: "A Centennial substitute. Very pungent, aromatic, and clean tasting."
   uses:
     - Ambers
     - Pale Ales
@@ -760,3 +760,123 @@
     - German Lagers
   substitutes:
     - Noble
+
+- name: Pacifica
+  alpha: [5, 6]
+  countries:
+    - New Zealand
+  types:
+    - finishing
+    - aroma
+  description: "The Pacifica brings something of a blend of new and old-world taste descriptors to the brewers' forum. Orange marmalade aptly describes the citrus aroma notes achieved through late addition. Bittering quality is such that early kettle additions net a soft yet solid finish even in highly bittered beers."
+  uses: []
+  substitutes: []
+
+- name: Pacific Gem
+  alpha: [15, 17]
+  countries:
+    - New Zealand
+  types:
+    - bittering
+  description: "A pleasing fruity aroma of blackberries with a woodsy flavor are the essence of this variety used mainly as a bittering agent in organic beers."
+  uses:
+    - Organic Pale Ales
+    - IPAs
+  substitutes: []
+
+- name: Pacific Jade
+  alpha: [12, 14]
+  countries:
+    - New Zealand
+  types:
+    - all purpose
+  description: "The aroma of this hop is described as ``bold'' as it delivers a herbal infusion of fresh citrus and crushed black pepper. The citrus aroma and flavour notes work well to temper malt sweetness in ``fullish'' Ales especially when used moderately as a finishing hop."
+  uses:
+    - Dry Lagers
+  substitutes: []
+
+- name: Palisade
+  alpha: [6, 9]
+  countries: []
+  types:
+    - finishing
+  description: "Aroma described as floral, Subtle Apricot, Grassy or ``Pretty.'' Non-aggressive, smooth hop flavor with a fruity, non-citrusy aroma more characteristic of english style Pale ales."
+  uses:
+    - English Ales
+  substitutes:
+    - Glacier
+
+- name: Perle
+  alpha: [7, 9]
+  countries: []
+  types:
+    - all purpose
+  description: "A palate-pleaser with its moderate, pleasant, minty clean bittering qualities and refreshing, spicy ``green hop'' aroma. Derived from English Notheren Brewer."
+  uses:
+    - Pale Ales
+    - Lagers
+    - Stouts
+  substitutes:
+    - Northern Brewer
+    - Cluster
+    - Galena
+
+- name: Phoenix
+  alpha: [10, 12]
+  countries: []
+  types:
+    - bittering
+  description: "Attractive English aroma (sources say similar to challenger) with high alpha- acid. Use as an aroma hop were reportedly dissapointing."
+  uses:
+    - English Ales
+    - Porters
+    - Stouts
+    - ESBs
+    - Bitters
+  substitutes:
+    - Challenger
+
+- name: Pioneer
+  alpha: [8, 10]
+  countries: []
+  types:
+    - dual purpose
+  description: "New dwarf variety with clean bitterness and mild English aroma. Unusual pleasant lemon/grapefruit citrus aroma distinctively hoppy."
+  uses:
+    - English Ales
+    - ESBs
+    - Bitters
+  substitutes:
+    - Yeoman
+    - Herald
+    - Omega
+
+- name: Pride of Ringwood
+  alpha: [7, 10]
+  countries:
+    - AU
+  types:
+    - all purpose
+  description: "Quite pronounced aroma but not unpleasant, citrus-like. At the time of release in 1965 it was the highest alpha hop in the world. closely associated with such famous beers as Foster's Lager."
+  uses:
+    - British Ales
+    - Australian Ales
+    - Australian Lagers
+  substitutes:
+    - Centennial
+    - Galena
+    - Cluster
+
+- name: Progress
+  alpha: [5, 8]
+  countries: []
+  types:
+    - dual purpose
+  description: "Simular to Fuggles but a little sweeter. Also known as UK Progress and Wye Progress. Bred from Whitbred Goldings Vareity but with an assertive fruity aroma. Robust, Fruity, with Lime. M. Jackson called them ``junipery.''"
+  uses:
+    - Cask Ales
+    - English Ales
+    - Scottish Ales
+  substitutes:
+    - Golding
+    - Fuggle
