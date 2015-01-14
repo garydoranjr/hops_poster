@@ -64,23 +64,24 @@
 \newlength{\framespacing}
 \setlength{\framespacing}{\beamer@rightmargin}
 \newlength{\hopwidth}
-\setlength{\hopwidth}{8in}
+\setlength{\hopwidth}{5in}
 \newlength{\hopheight}
-\setlength{\hopheight}{4in}
-\newlength{\hopbskip}
-\setlength{\hopbskip}{0.7in}
+\setlength{\hopheight}{3in}
+%\newlength{\hopbskip}
+%\setlength{\hopbskip}{0.1\hop}
 \newlength{\hoptskip}
-\setlength{\hoptskip}{1.5in}
+\setlength{\hoptskip}{0.35\hopheight}
 
 \newcommand{\hop}[8]{
     \draw [] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
-    \draw [] (#1in, #2in+\hopheight) node[anchor=north west] {\textbf{\Large{#3}}};
-    \draw [] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\Large{#4}};
-    \draw [] (#1in+0.5\hopwidth, #2in+\hopbskip) node[text width=0.9\hopwidth, anchor=south, text badly centered] {#5};
-    \draw [] (#1in+0.5\hopwidth, #2in) node[text width=0.9\hopwidth, anchor=south, text badly centered] {#6};
+    \draw [] (#1in, #2in+\hopheight) node[anchor=north west] {\small{\textbf{#3}}};
+    \draw [] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\small{#4}};
+    \draw [] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
+    \draw [] (#1in+0.5\hopwidth, #2in) node[text width=0.9\hopwidth, anchor=south, text badly centered] {\scriptsize{#6}\par};
+    %\draw (#1in, #2in+\hopbskip) -- (#1in+\hopwidth, #2in+\hopbskip);
 
-    \draw [] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\large{#7}}};
-    \draw [] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\large{#8}};
+    \draw [] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\footnotesize{#7}}};
+    \draw [] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\footnotesize{#8}};
 
     \draw (#1in, #2in+\hopheight-\hoptskip) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip);
 }
