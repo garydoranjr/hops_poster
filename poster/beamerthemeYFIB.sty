@@ -1,0 +1,100 @@
+\ProvidesPackage{beamerthemeYFIB}
+
+\RequirePackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{cwrublue}{rgb}{0.0392156863, 0.188235294, 0.305882353}
+\definecolor{cwrugray}{rgb}{0.415686275, 0.415686275, 0.415686275}
+
+\setbeamercolor{headline}{fg=cwrublue, bg=cwrublue}
+\setbeamercolor{footline}{fg=cwrugray, bg=cwrugray}
+\setbeamerfont{footline}{size=\large,series=\tt}
+\setbeamercolor{separation line}{bg=cwrublue}
+\setbeamercolor{title in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=white}
+\setbeamercolor{institute in headline}{fg=white}
+
+\setbeamercolor{framesubtitle}{fg=white, bg=cwrublue}
+\setbeamercolor{author in head/foot}{fg=white, bg=cwrublue}
+\setbeamercolor{title in head/foot}{bg=white, fg=cwrublue}
+
+\setbeamercolor*{normal text}{fg=black, bg=white}
+\setbeamercolor*{block body}{bg=white, fg=black}
+\setbeamercolor*{block title}{fg=white,bg=cwrugray}
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamercolor{upper separation line head}{fg=black}
+
+\setbeamercolor*{example body}{fg=white,bg=black}
+\setbeamercolor*{example text}{fg=white,bg=black}
+\setbeamercolor*{example title}{bg=white,fg=black}
+
+\setbeamercolor{alerted text}{fg=cwrublue}
+
+\setbeamercolor{structure}{fg=cwrugray}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[rounded=true,shadow=false,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=true,shadow=false,colsep*=.75ex,sep=.75ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+  \leavevmode
+}
+
+\newlength{\framethickness}
+\setlength{\framethickness}{10pt}
+\newlength{\framespacing}
+\setlength{\framespacing}{\beamer@rightmargin}
+\newlength{\hopwidth}
+\setlength{\hopwidth}{8in}
+\newlength{\hopheight}
+\setlength{\hopheight}{4in}
+\newlength{\hopbskip}
+\setlength{\hopbskip}{0.7in}
+\newlength{\hoptskip}
+\setlength{\hoptskip}{1.5in}
+
+\newcommand{\hop}[8]{
+    \draw [] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
+    \draw [] (#1in, #2in+\hopheight) node[anchor=north west] {\textbf{\Large{#3}}};
+    \draw [] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\Large{#4}};
+    \draw [] (#1in+0.5\hopwidth, #2in+\hopbskip) node[text width=0.9\hopwidth, anchor=south, text badly centered] {#5};
+    \draw [] (#1in+0.5\hopwidth, #2in) node[text width=0.9\hopwidth, anchor=south, text badly centered] {#6};
+
+    \draw [] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\large{#7}}};
+    \draw [] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\large{#8}};
+
+    \draw (#1in, #2in+\hopheight-\hoptskip) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip);
+}
+
+\setbeamertemplate{background canvas}{  
+\input{background.tex}
+}
+
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End: 
