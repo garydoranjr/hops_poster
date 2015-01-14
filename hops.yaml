@@ -1061,3 +1061,166 @@
   description: "A super alpha hop. Not much info on this one."
   uses: []
   substitutes: []
+
+- name: Super Alpha
+  alpha: [10, 12]
+  countries:
+    - New Zealand
+  types:
+    - all purpose
+  description: "Slight fresh grassiness beneath a mix of aromas such as pine needles and lemongrass. A very versatile hop in the brew house where it can be used to deliver a very crisp bitter edge on the back pallet as well as excellent aroma qualities. Like most New Zealand varieties the exceptional oil profile sets it apart as a hop with many applications."
+  uses: []
+  substitutes: []
+
+- name: Super Galena
+  alpha: [13, 16]
+  countries: []
+  types:
+    - bittering
+  description: "Super Galena is a super high alpha variety developed by the Hopsteiner breeding program and released in 2006. It has relatively high contents of both alpha and beta acids, making it a good bittering hop with pleasant aroma. Super Galena is comparable to Galena in its aroma and bitterness profile, but offers a substantially higher yield and complete resistance to all current hop powdery mildew strains found in the U.S."
+  uses:
+    - American Ales
+    - American Stouts
+    - American Lagers
+  substitutes:
+    - Galena
+    - Nugget
+    - Cluster
+    - Chinook
+
+- name: Talisman
+  alpha: [7, 9]
+  countries: []
+  types:
+    - all purpose
+  description: "An improved Cluster variety. Not much more info available."
+  uses: []
+  substitutes: []
+
+- name: Target
+  alpha: [10, 12]
+  countries:
+    - UK
+  types:
+    - all purpose
+  description: "Widely used for high alpha acid content comined with an acceptable aroma.  Pleasant English hop aroma, quite intense."
+  uses:
+    - British Ales
+    - British Lagers
+  substitutes:
+    - Kent Golding
+    - Northdown
+
+- name: Taurus
+  alpha: [12, 15]
+  countries: []
+  types:
+    - bittering
+  description: "Ultra high-alpha acid variety of Hallertau, giving medium bitterness. It has a distinctive hoppy tang with a delicate aroma."
+  uses: []
+  substitutes:
+    - Magnum
+    - Citra
+    - Tradition
+
+- name: Tettnang
+  alpha: [4, 5]
+  countries:
+    - Germany
+    - US
+  types:
+    - finishing
+  description: "Fine, very spicy, mild, floral, very aromatic. Recently established in the US, a traditional German variety, true noble aroma variety."
+  uses:
+    - Wheats
+    - Lagers
+  substitutes:
+    - Saaz
+    - Spalter
+    - Ultra
+
+- name: Tomahawk
+  alpha: [14, 17]
+  countries: []
+  types:
+    - bittering
+  description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
+  uses:
+    - American Ales
+    - Stouts
+  substitutes:
+    - Columbus
+    - Zeus
+
+- name: Tradition
+  alpha: [10, 13]
+  countries: []
+  types:
+    - bittering
+  description: "High-alpha acid Hallertau variety with German characteristics grown to replace Hersbrucker."
+  uses:
+    - Lagers
+    - Pilsners
+    - Bocks
+    - Wheats
+    - Weizens
+  substitutes:
+    - Magnum
+    - Hersbrucker
+    - Taurus
+
+- name: Ultra
+  alpha: [3, 3]
+  countries: []
+  types:
+    - finishing
+  description: "Newer domestic aroma variety with Saaz characteristics. Very fine, mild, spicy with floral notes. Bred as a substitute for Hallertauer Mittelfruh."
+  uses:
+    - Pilsners
+    - German Lagers
+  substitutes:
+    - Hallertau
+    - Noble
+    - Crystal
+    - Liberty
+    - Mt. Hood
+
+- name: Vanguard
+  alpha: [4, 6]
+  countries: []
+  types:
+    - finishing
+  description: "Slightly flowery, mild. Similar to Hallertau Mittlefruh and saaz in aroma. A gentle hop for subtle bitterness, aroma, and flavor."
+  uses:
+    - Light Lagers
+    - Pilsners
+    - Kolsch
+    - Wheat
+    - Munich Helles
+  substitutes: []
+
+- name: Warrior
+  alpha: [14.5, 17]
+  countries: []
+  types:
+    - bittering
+  description: "Grapefruity and lemony, some piney notes. Also saw pineapple as a descriptor. Its high bittering value and very mild aroma offers new dimensions to IPA and Double IPA brewers."
+  uses:
+    - IPAs
+  substitutes: []
+
+- name: Willamette
+  alpha: [4, 6]
+  countries: []
+  types:
+    - finishing
+  description: "The king of aroma hops in the US with its modest bittering value and the joyous harmony of flowers, fruit, earth and spice. A quality aroma hop with a smooth soft flavor."
+  uses:
+    - American Ales
+    - American Lagers
+    - British Ales
+    - British Lagers
+  substitutes:
+    - Fuggle
+    - Styrian Golding
+    - Kent Golding
