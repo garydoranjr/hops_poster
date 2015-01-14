@@ -17,6 +17,7 @@ FMT = r'\hop{%.1f}{%.1f}{%s}{%s}{%s}{%s}{%s}{%s}'
 def fix_name(name):
     name = name.replace('. ', r'.\ ')
     name = name.replace('fruh', r'fr\"{u}h')
+    name = name.replace('New Zealand', 'NZ')
     return name
 
 def format_number(flt):
@@ -31,6 +32,41 @@ def format_alpha(alpha):
     else:
         return r'%s--%s\%%' % tuple(map(format_number, alpha))
 
+def fix_beer(beer):
+    beer = beer.replace('Koelsch', r'K\"{o}lsch')
+    beer = beer.replace('Kolsch', r'K\"{o}lsch')
+    beer = beer.replace(' ', '~')
+    return beer
+
+TYPES = {
+    'finishing': 'Finishing',
+    'bittering': 'Bittering',
+    'aroma': 'Aroma',
+    'flavor': 'Flavor',
+    'all purpose': 'All Purpose',
+    'dual purpose': 'Dual Purpose',
+}
+
+def fix_type(htype):
+    return TYPES[htype]
+
+COUNTRIES = {
+    'US' : 'US',
+    'UK' : 'UK',
+    'Germany' : 'DE',
+    'German' : 'DE',
+    'Czech' : 'CZ',
+    'New Zealand' : 'NZ',
+    'Canada' : 'CA',
+    'Australia' : 'AU',
+    'AU' : 'AU',
+    'Japan' : 'JP',
+    'Poland' : 'PL',
+}
+
+def fix_country(country):
+    return COUNTRIES[country]
+
 def main():
     with open(IFILE, 'r+') as f:
         hops = yaml.load(f.read())
@@ -42,10 +78,10 @@ def main():
         x, y = (START + col*COLSKIP), (START + row*ROWSKIP)
         name = fix_name(hop['name'])
         alpha = format_alpha(hop['alpha'])
-        countries = 'US'
-        types = 'All Purpose'
+        countries = ', '.join(map(fix_country, hop['countries']))
+        types = ', '.join(map(fix_type, hop['types']))
         description = hop['description']
-        beers = ', '.join(hop['uses'])
+        beers = ', '.join(map(fix_beer, hop['uses']))
         lines.append(FMT % (x, y, name, alpha, description, beers, types, countries))
 
     data = '\n'.join(lines)
