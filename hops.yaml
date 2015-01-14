@@ -4,9 +4,9 @@
     - UK
   types:
     - bittering
-  description: "Said to be citrusy, orange flavored. A good compliment hop to Targets. Good dual purpose hop."
+  description: "Said to be citrus, orange flavored. A good compliment hop to Targets. Good dual purpose hop."
   uses:
-    - English Style IPAs
+    - English IPAs
     - Ales
   substitutes:
     - Challenger
@@ -18,7 +18,7 @@
     - US
   types:
     - finishing
-  description: "This hop is used for its aromatic properties and moderate bittering. It has aromas that are citrusy (Grapefruit), earthy, and floral."
+  description: "This hop is used for its aromatic properties and moderate bittering. It has aromas that are citrus (Grapefruit), earthy, and floral."
   uses:
     - American Ales
   substitutes:
@@ -446,7 +446,7 @@
     - Stock Ales
     - Altbiers
     - Belgian Ales
-    - Continental Style Lagers
+    - Continental Lagers
     - Pilsners
     - Bocks
     - Lagers
@@ -499,7 +499,7 @@
     - Stock Ales
     - Altbiers
     - Belgian Ales
-    - Continental Style Lagers
+    - Continental Lagers
     - Pilsners
     - Bocks
     - Lagers
@@ -669,7 +669,7 @@
     - New Zealand
   types:
     - finishing
-  description: "Bred from the German Hallertau Mittelfruh, this aroma hop is characterized by woodsy, citrusy notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
+  description: "Bred from the German Hallertau Mittelfruh, this aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
   uses:
     - Organic Pilsners
     - Lagers
@@ -800,7 +800,7 @@
   countries: []
   types:
     - finishing
-  description: "Aroma described as floral, Subtle Apricot, Grassy or ``Pretty.'' Non-aggressive, smooth hop flavor with a fruity, non-citrusy aroma more characteristic of english style Pale ales."
+  description: "Aroma described as floral, Subtle Apricot, Grassy or ``Pretty.'' Non-aggressive, smooth hop flavor with a fruity, non-citrus aroma more characteristic of english style Pale ales."
   uses:
     - English Ales
   substitutes:
@@ -1021,7 +1021,7 @@
   countries: []
   types:
     - bittering
-  description: "Noted for its piney, citrusy aroma. May give a unique New Zealand twist to English beer styles. Coarse, high-alpha acid variety."
+  description: "Noted for its piney, citrus aroma. May give a unique New Zealand twist to English beer styles. Coarse, high-alpha acid variety."
   uses:
     - Ales
   substitutes: []
@@ -1224,3 +1224,40 @@
     - Fuggle
     - Styrian Golding
     - Kent Golding
+
+- name: Yeoman
+  alpha: [9, 14]
+  countries:
+    - UK
+  types:
+    - bittering
+  description: "A popular bittering hop in the UK. Similar to Targets. Not too available in the US."
+  uses:
+    - British Ales
+    - British Lagers
+  substitutes:
+    - Target
+
+- name: Zenith
+  alpha: [9, 10]
+  countries: []
+  types:
+    - aroma
+  description: "Has a good aroma. Not too available."
+  uses:
+    - British Ales
+    - British Lagers
+  substitutes: []
+
+- name: Zeus
+  alpha: [14, 17]
+  countries: []
+  types:
+    - bittering
+  description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
+  uses:
+    - American Ales
+    - American Stouts
+  substitutes:
+    - Columbus
+    - Tomahawk
