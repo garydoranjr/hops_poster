@@ -872,7 +872,7 @@
   countries: []
   types:
     - dual purpose
-  description: "Simular to Fuggles but a little sweeter. Also known as UK Progress and Wye Progress. Bred from Whitbred Goldings Vareity but with an assertive fruity aroma. Robust, Fruity, with Lime. M. Jackson called them ``junipery.''"
+  description: "Similar to Fuggles but a little sweeter. Also known as UK Progress and Wye Progress. Bred from Whitbred Goldings Vareity but with an assertive fruity aroma. Robust, Fruity, with Lime. M. Jackson called them ``junipery.''"
   uses:
     - Cask Ales
     - English Ales
@@ -880,3 +880,184 @@
   substitutes:
     - Golding
     - Fuggle
+
+- name: Riwaka
+  alpha: [4.5, 6.5]
+  countries:
+    - New Zealand
+  types:
+    - finishing
+  description: "Powerful grapefruit ``citrus'' characters are literally breathtaking. A punchy addition to the new-world styles of Pale Ale and regional Pilseners. A cult hero that is established in the New Zealand craft beer culture."
+  uses:
+    - Pale Ales
+  substitutes: []
+
+- name: Saaz
+  alpha: [3, 5]
+  countries: []
+  types:
+    - finishing
+  description: "The Old World steadfast standby made famous by Pilsner Urquell possesses the aromatic blend of earth and spice notable in European nobles. Low bittering value."
+  uses:
+    - Continental Lagers
+    - Wheats
+    - Pilsners
+    - Lagers
+  substitutes:
+    - Czech Saaz
+    - Tettnang
+
+- name: Santiam
+  alpha: [5.5, 8]
+  countries:
+    - US
+  types:
+    - finishing
+  description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfruh, Cascades, and who knows what else. Aroma is a suggestion of Tettnanger. Another product of Corvallis Oregon."
+  uses:
+    - American Lagers
+    - German Lagers
+    - German Ales
+    - Wheats
+  substitutes:
+    - Citra
+
+- name: Saphir
+  alpha: [3, 4.5]
+  countries: []
+  types:
+    - finishing
+  description: "Refined, sweet, mild clean citrus, hint of tangerine. It was bred with a Hallertau parent and probably a long list of other hops to make it more commercially viable."
+  uses:
+    - Pilsners
+    - German Lagers
+    - Belgian Whites
+  substitutes:
+    - Mittelfruh Hallertau
+
+- name: Simcoe
+  alpha: [12, 14]
+  countries: []
+  types:
+    - bittering
+    - flavor
+  description: "Aromas of passionfruit, apricot, intense pine and woodsy aroma adds to the fresh, youthful vigor of this complex hop. Dual purpose but generally considered a bittering hop."
+  uses:
+    - American Ales
+    - IPAs
+    - Double IPAs
+  substitutes:
+    - Amarillo
+    - Cascade
+    - Centennial
+
+- name: Sladek
+  alpha: [9, 10]
+  countries:
+    - Czech
+  types:
+    - finishing
+  description: "Hybrid aroma variety of Saaz type with excellent impact on hoppy taste and aroma of beer. New dual purpose Czech hop."
+  uses:
+    - Lagers
+  substitutes:
+    - Saaz
+
+- name: Sorachi Ace
+  alpha: [13, 16]
+  countries:
+    - Japan
+  types:
+    - bittering
+  description: "A Japanese winner by all counts with its powerful lemon aroma, high bittering value and flavorful personality."
+  uses:
+    - American Ales
+    - Lagers
+    - Pale Ales
+    - Wheats
+  substitutes: []
+
+- name: Southern Cross
+  alpha: [12, 12]
+  countries:
+    - New Zealand
+  types:
+    - bittering
+  description: "The aroma is characterized by a heady mix of lemon peel and pine needles layered beneath the clean spiciness. Primarily a bittering hop but reported to have a nice mellow aroma as a late addition hop."
+  uses:
+    - Australian Lagers
+  substitutes: []
+
+- name: Spalter
+  alpha: [3, 6]
+  countries:
+    - Germany
+  types:
+    - finishing
+  description: "Traditional German noble hop. A Saaz alternative, aromatic and flavorful."
+  uses:
+    - German Lagers
+  substitutes:
+    - Saaz
+    - Tettnang
+    - Ultra
+
+- name: Sterling
+  alpha: [6, 9]
+  countries: []
+  types:
+    - aroma
+  description: "Herbs and spices dominate, flowers and citrus around the fringes. Moderate bittering values with a mix of Saaz and Mt. Hood properties."
+  uses:
+    - Ales
+    - Pilsners
+    - Lagers
+  substitutes:
+    - Saaz
+    - Mt. Hood
+
+- name: Sticklebract
+  alpha: [9, 11]
+  countries: []
+  types:
+    - bittering
+  description: "Noted for its piney, citrusy aroma. May give a unique New Zealand twist to English beer styles. Coarse, high-alpha acid variety."
+  uses:
+    - Ales
+  substitutes: []
+
+- name: Styrian Goldings
+  alpha: [4, 6]
+  countries: []
+  types:
+    - finishing
+  description: "Delicate, slightly spicy, soft and floral. A world renowned aroma hop with widespread usage in both ale and lager brewing. An ecotype of Fuggle grown in Slovenia."
+  uses:
+    - English Ales
+    - Oktoberfest Lagers
+    - Belgian Ales
+    - Pilsners
+  substitutes:
+    - Fuggle
+    - Willamette
+
+- name: Summit
+  alpha: [17.5, 19.5]
+  countries: []
+  types:
+    - bittering
+  description: "Quite new on the scene (2003) but the consensus is very positive with its ``peak'' bittering value coupled with robust citrus notes of orange, tangerine and grapefruit. Receiving accolades as an ideal hop for the ultimate Pale Ale."
+  uses:
+    - Pale Ales
+    - IPAs
+  substitutes:
+    - Simcoe
+
+- name: Sun
+  alpha: [15, 16]
+  countries: []
+  types:
+    - bittering
+  description: "A super alpha hop. Not much info on this one."
+  uses: []
+  substitutes: []
