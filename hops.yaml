@@ -101,6 +101,7 @@
   types:
     - bittering
   description: "New Super High Alpha. The higher Co-Ho levels mean a not completely smooth bittering, but not as harsh as Chinook. (Its bittering properties are similar to Simcoe). Flavor and aroma are described as an earthy spice and herb, fruity and floral, so, I guess that it is different things to different people. It's a descendant of Zeus and Nugget."
+  alt_description: "Not completely smooth bittering, but not as harsh as Chinook (similar to Simcoe). Flavor and aroma are described as an earthy spice and herb, fruity and floral."
   uses:
     - American IPAs
     - American Pale Ales
@@ -162,6 +163,7 @@
   types:
     - all purpose
   description: "Flowery, citrus, and spice with grapefruit the noticeable fragrance quite often. This medium aroma balances the low bittering value. Derived from a cross between Fuggles and the Russian hop Serebrianker. Very popular hop among craft brewers. Good for flavor and aroma, but an acceptable bittering hop."
+  alt_description: "Flowery, citrus, and spice with grapefruit the noticeable fragrance quite often. This medium aroma balances the low bittering value. Good for flavor and aroma, but an acceptable bittering hop."
   uses:
     - Pale Ales
     - IPAs
@@ -179,6 +181,7 @@
     - bittering
     - aroma
   description: "Flowers and citrus most evident. A medium aroma with mid-to-high bittering value makes it a dual purpose choice. Cross between Brewer's Gold and a selected USDA male."
+  alt_description: "Flowers and citrus most evident. A medium aroma with mid-to-high bittering value makes it a dual purpose choice."
   uses:
     - Medium American Ales
     - Dark American Ales
@@ -206,6 +209,7 @@
   types:
     - bittering
   description: "Mild to medium-heavy, spicy, distinct piney aroma like a pine forest washed with exotic spice and infused with grapefruit. This alluring aroma and a high bittering value has gained this hop full respect from craft and major brewers. Cross between Petham Golding and USDA select male."
+  alt_description: "Mild to medium-heavy, spicy, distinct piney aroma like a pine forest washed with exotic spice and infused with grapefruit."
   uses:
     - Pale Ales
     - Lagers
@@ -221,7 +225,8 @@
   countries: []
   types:
     - all purpose
-  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfr\"{u}h, Tettnanger, EKG hybrid with distinctive citrus aroma."
+  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfruh, Tettnanger, EKG hybrid with distinctive citrus aroma."
+  alt_description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas."
   uses:
     - Pale Ales
     - IPAs
@@ -263,9 +268,11 @@
   types:
     - all purpose
   description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal, surprisingly pleasant aroma."
+  alt_description: "Earthy, spicy, pungent, with some citrus overtones. High bittering yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal, surprisingly pleasant aroma."
   uses:
     - Pale Ales
-    - American IPAs
+    #- American IPAs
+    - IPAs
     - Stouts
     - Lagers
   substitutes:
@@ -295,6 +302,7 @@
   types:
     - finishing
   description: "Mild and pleasant, a delicate blend of spices and flowers. Low bittering value adds to the charm. Known as a triploid, three hops contributing characteristics: Cascade, Brewer's Gold and Early Green."
+  alt_description: "Mild and pleasant, a delicate blend of spices and flowers. Low bittering value adds to the charm."
   uses:
     - German-style Pilsners
     - Lagers
@@ -388,6 +396,7 @@
   types:
     - bittering
   description: "Medium aroma but pleasant hoppiness. Bred from Brewer's Gold by open pollination. Excellent high alpha acid hop with balanced bittering profiles paired with acceptable hop aroma."
+  alt_description: "Medium aroma but pleasant hoppiness. Excellent high alpha acid hop with balanced bittering profiles paired with acceptable hop aroma."
   uses:
     - American Ales
     - American Stouts
@@ -431,8 +440,11 @@
   types:
     - bittering
   description: "A high alpha hop with fruity and resiny flavors and floral aromas, from New Zealand. Considered a bittering variety typically for lagers, Green Bullet also carries a solid Styrian characteristic of subtle spiciness which finds it at home in a freshly drawn pint of Bitter or an Irish-style Dry Stout."
+  alt_description: "A high alpha hop with fruity and resiny flavors and floral aromas. Considered a bittering variety typically for lagers, it also carries a solid Styrian characteristic of subtle spiciness."
   uses:
     - Lagers
+    - Irish Dry Stouts
+    - Bitters
   substitutes: []
 
 - name: Domestic Hallertau
@@ -441,12 +453,13 @@
     - Germany
   types:
     - finishing
-  description: "Named for its origins in the Hallertauer region of Germany, this is a noble aroma hop with ever-so-subtle flower and spice fragrances defining its ``\"{u}ber alles'' superiority."
+  description: "Named for its origins in the Hallertauer region of Germany, this is a noble aroma hop with ever-so-subtle flower and spice fragrances defining its ``uber alles'' superiority."
+  alt_description: "This is a noble aroma hop with subtle flower and spice fragrances defining its ``uber alles'' superiority."
   uses:
     - Stock Ales
     - Altbiers
     - Belgian Ales
-    - Continental Lagers
+    #- Continental Lagers
     - Pilsners
     - Bocks
     - Lagers
@@ -468,8 +481,9 @@
     - Altbiers
     - Pilsners
     - Belgian Ales
-    - American Lagers
-    - German Lagers
+    #- American Lagers
+    #- German Lagers
+    - Lagers
   substitutes:
     - Mt. Hood
     - Liberty
@@ -548,6 +562,7 @@
   types:
     - finishing
   description: "Refined gentle, fragrant and pleasant with flowery tones. Traditional old English hop. Referred to as East Kent Goldings if grown in East Kent, Kent Goldings if grown in Mid-Kent, and Goldings if grown elsewhere."
+  alt_description: "Gentle, fragrant, and pleasant with flowery tones. Referred to as ``East Kent Goldings'' if grown in East Kent, ``Kent Goldings'' if grown in Mid-Kent, and ``Goldings'' if grown elsewhere."
   uses:
     - English Ales
     - Belgian Ales
@@ -619,9 +634,13 @@
     - New Zealand
   types:
     - all purpose
-  description: "An excellent hop in many applications from first kettle additions through to late. This hop offers a unique aroma and flavour making it suitable for producing bigger more traditional style Lagers, especially Bohemian Pilsner. Excellent when employed in multiple additions from a single hop bill and sits well on the palate to balance speciality malt sweetness. An excellent variety for Belgian Ales and gives a real edge to Cask Bitter."
+  description: "An excellent hop in many applications from first kettle additions through to late. This hop offers a unique aroma and flavor making it suitable for producing bigger more traditional style Lagers, especially Bohemian Pilsner. Excellent when employed in multiple additions from a single hop bill and sits well on the palate to balance speciality malt sweetness. An excellent variety for Belgian Ales and gives a real edge to Cask Bitter."
+  alt_description: "A unique aroma and flavor; excellent when employed in multiple additions from a single hop bill and sits well on the palate to balance speciality malt sweetness."
   uses:
+    - Lagers
     - Belgian Ales
+    - Cask Bitters
+    - Bohemian Pilsners
   substitutes: []
 
 - name: Mt. Hood
@@ -630,6 +649,7 @@
   types:
     - finishing
   description: "Hybrid of Hallertau with similar mild flower/spice aroma characteristics with a hint more of the forest. ``Clean'' commonly describes it, with similarities to the German Hallertau and Hersbrucker varieties."
+  alt_description: "Hybrid of Hallertau with similar mild flower/spice aroma characteristics with a hint more of the forest. ``Clean'' commonly describes it."
   uses:
     - American Ales
     - American Lagers
@@ -647,6 +667,7 @@
   types:
     - bittering
   description: "Described to have a white wine fruitiness of ``crushed gooseberries.'' A hop that requires judicious application in the brew house, this truly unique dual-purpose variety can be used to produce big punchy Ales as well as subtle yet bitter Lagers. The fruitiness may be a little overpowering for the uninitiated, however those with a penchant for bold hop character will find several applications for this true brewer's hop."
+  alt_description: "Described to have a white wine fruitiness of ``crushed gooseberries.'' A hop that requires judicious application in the brew house; the fruitiness may be a little overpowering for the uninitiated."
   uses:
     - Ales
     - Lagers
@@ -658,18 +679,20 @@
     - US
   types:
     - bittering
-  description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfr\"{u}h, Late Grape, Belgium 31, and Fuggle. Newport hops were bred as a potential replacement to Galena based on their resistance to mildew. Widely used by the Rogue Brewery."
+  description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfruh, Late Grape, Belgium 31, and Fuggle. Newport hops were bred as a potential replacement to Galena based on their resistance to mildew. Widely used by the Rogue Brewery."
+  alt_description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfruh, Late Grape, Belgium 31, and Fuggle. Widely used by the Rogue Brewery."
   uses: []
   substitutes:
     - Galena
 
-- name: New Zealand Hallertau
+- name: NZ Hallertau
   alpha: [8, 9]
   countries:
     - New Zealand
   types:
     - finishing
-  description: "Bred from the German Hallertau Mittelfr\"{u}h, this aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
+  description: "Bred from the German Hallertau Mittelfruh, this aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
+  alt_description: "This aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop."
   uses:
     - Organic Pilsners
     - Lagers
@@ -697,6 +720,7 @@
   types:
     - all purpose
   description: "A true dual-purpose hop containing moderate amounts of alpha acids combined with an acceptable aroma profile. Neutral, clean aroma, woody with evergreen and mint overtones and slightly higher-than-average bittering value."
+  alt_description: "Moderate alpha acids combined with an acceptable aroma profile. Neutral, clean aroma, woody with evergreen and mint overtones."
   uses:
     - English Ales
     - ESBs
@@ -714,6 +738,7 @@
   types:
     - all purpose
   description: "Strong heavy and herbal, spicy aroma and high bittering value (along with desirable growing traits) has brought this hop variety to the forefront of the industry. Selected from a cross between Brewer's Gold and a high alpha male."
+  alt_description: "Strong heavy and herbal, spicy aroma and high bittering value (along with desirable growing traits) has brought this hop variety to the forefront of the industry."
   uses:
     - Ales
     - Stouts
@@ -769,6 +794,7 @@
     - finishing
     - aroma
   description: "The Pacifica brings something of a blend of new and old-world taste descriptors to the brewers' forum. Orange marmalade aptly describes the citrus aroma notes achieved through late addition. Bittering quality is such that early kettle additions net a soft yet solid finish even in highly bittered beers."
+  alt_description: "A blend of new and old-world tastes; orange marmalade aptly describes the citrus aroma notes achieved through late addition. Bittering quality is such that early additions net a soft yet solid finish even in highly bittered beers."
   uses: []
   substitutes: []
 
@@ -790,7 +816,8 @@
     - New Zealand
   types:
     - all purpose
-  description: "The aroma of this hop is described as ``bold'' as it delivers a herbal infusion of fresh citrus and crushed black pepper. The citrus aroma and flavour notes work well to temper malt sweetness in ``fullish'' Ales especially when used moderately as a finishing hop."
+  description: "The aroma of this hop is described as ``bold'' as it delivers a herbal infusion of fresh citrus and crushed black pepper. The citrus aroma and flavor notes work well to temper malt sweetness in ``fullish'' Ales especially when used moderately as a finishing hop."
+  alt_description: "The aroma is described as ``bold'' as it delivers a herbal infusion of fresh citrus and crushed black pepper. Works well to temper malt sweetness in ``fullish'' Ales especially as a finishing hop."
   uses:
     - Dry Lagers
   substitutes: []
@@ -860,8 +887,9 @@
   description: "Quite pronounced aroma but not unpleasant, citrus-like. At the time of release in 1965 it was the highest alpha hop in the world. closely associated with such famous beers as Foster's Lager."
   uses:
     - British Ales
-    - Australian Ales
-    - Australian Lagers
+    #- Australian Ales
+    #- Australian Lagers
+    - Australian Beers
   substitutes:
     - Centennial
     - Galena
@@ -873,6 +901,7 @@
   types:
     - dual purpose
   description: "Similar to Fuggles but a little sweeter. Also known as UK Progress and Wye Progress. Bred from Whitbred Goldings Vareity but with an assertive fruity aroma. Robust, Fruity, with Lime. M. Jackson called them ``junipery.''"
+  alt_description: "Similar to Fuggles but a little sweeter. Bred from Whitbred Goldings vareity but with an assertive fruity aroma. Robust, fruity, with lime; described as ``junipery.''"
   uses:
     - Cask Ales
     - English Ales
@@ -888,6 +917,7 @@
   types:
     - finishing
   description: "Powerful grapefruit ``citrus'' characters are literally breathtaking. A punchy addition to the new-world styles of Pale Ale and regional Pilsners. A cult hero that is established in the New Zealand craft beer culture."
+  alt_description: "Powerful grapefruit ``citrus'' characters are literally breathtaking. A punchy addition to the new-world styles of Pale Ale and regional Pilsners. A cult hero that is established in the NZ craft beer culture."
   uses:
     - Pale Ales
   substitutes: []
@@ -914,7 +944,8 @@
     - US
   types:
     - finishing
-  description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfr\"{u}h, Cascades, and who knows what else. Aroma is a suggestion of Tettnanger. Another product of Corvallis Oregon."
+  description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfruh, Cascades, and who knows what else. Aroma is a suggestion of Tettnanger. Another product of Corvallis Oregon."
+  alt_description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfruh, Cascades, and others. Aroma is a suggestion of Tettnanger."
   uses:
     - American Lagers
     - German Lagers
@@ -985,6 +1016,7 @@
   types:
     - bittering
   description: "The aroma is characterized by a heady mix of lemon peel and pine needles layered beneath the clean spiciness. Primarily a bittering hop but reported to have a nice mellow aroma as a late addition hop."
+  alt_description: "The aroma is characterized by a heady mix of lemon peel and pine needles layered beneath the clean spiciness. Primarily a bittering hop but has a nice mellow aroma as a late addition hop."
   uses:
     - Australian Lagers
   substitutes: []
@@ -1029,10 +1061,12 @@
 
 - name: Styrian Goldings
   alpha: [4, 6]
-  countries: []
+  countries:
+    - SI
   types:
     - finishing
   description: "Delicate, slightly spicy, soft and floral. A world renowned aroma hop with widespread usage in both ale and lager brewing. An ecotype of Fuggle grown in Slovenia."
+  alt_description: "Delicate, slightly spicy, soft and floral. A world renowned aroma hop with widespread usage in both ale and lager brewing. Grown in Slovenia."
   uses:
     - English Ales
     - Oktoberfest Lagers
@@ -1048,6 +1082,7 @@
   types:
     - bittering
   description: "Quite new on the scene (2003) but the consensus is very positive with its ``peak'' bittering value coupled with robust citrus notes of orange, tangerine and grapefruit. Receiving accolades as an ideal hop for the ultimate Pale Ale."
+  alt_description: "New since 2003, but a positive consensus with its ``peak'' bittering value coupled with robust citrus notes of orange, tangerine and grapefruit. Receiving accolades as an ideal hop for the ultimate Pale Ale."
   uses:
     - Pale Ales
     - IPAs
@@ -1070,6 +1105,7 @@
   types:
     - all purpose
   description: "Slight fresh grassiness beneath a mix of aromas such as pine needles and lemongrass. A very versatile hop in the brew house where it can be used to deliver a very crisp bitter edge on the back pallet as well as excellent aroma qualities. Like most New Zealand varieties the exceptional oil profile sets it apart as a hop with many applications."
+  alt_description: "Slight fresh grassiness beneath a mix of aromas such as pine needles and lemongrass. A very versatile hop in the brew house where it can be used to deliver a very crisp bitter edge on the back pallet and excellent aroma qualities."
   uses: []
   substitutes: []
 
@@ -1079,10 +1115,12 @@
   types:
     - bittering
   description: "Super Galena is a super high alpha variety developed by the Hopsteiner breeding program and released in 2006. It has relatively high contents of both alpha and beta acids, making it a good bittering hop with pleasant aroma. Super Galena is comparable to Galena in its aroma and bitterness profile, but offers a substantially higher yield and complete resistance to all current hop powdery mildew strains found in the US."
+  alt_description: "Super Galena was developed by the Hopsteiner breeding program and released in 2006. It has high contents of both alpha and beta acids, making it a good bittering hop with pleasant aroma."
   uses:
-    - American Ales
-    - American Stouts
-    - American Lagers
+    #- American Ales
+    #- American Stouts
+    #- American Lagers
+    - "American Ales, Stouts, and Lagers"
   substitutes:
     - Galena
     - Nugget
@@ -1146,6 +1184,7 @@
   types:
     - bittering
   description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
+  alt_description: "Earthy, spicy, pungent, with some citrus overtones (not overwhelmingly citrus like Cascade). High bittering yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
   uses:
     - American Ales
     - Stouts
@@ -1175,7 +1214,7 @@
   countries: []
   types:
     - finishing
-  description: "Newer domestic aroma variety with Saaz characteristics. Very fine, mild, spicy with floral notes. Bred as a substitute for Hallertauer Mittelfr\"{u}h."
+  description: "Newer domestic aroma variety with Saaz characteristics. Very fine, mild, spicy with floral notes. Bred as a substitute for Hallertauer Mittelfruh."
   uses:
     - Pilsners
     - German Lagers
@@ -1191,7 +1230,7 @@
   countries: []
   types:
     - finishing
-  description: "Slightly flowery, mild. Similar to Hallertau Mittlefr\"{u}h and saaz in aroma. A gentle hop for subtle bitterness, aroma, and flavor."
+  description: "Slightly flowery, mild. Similar to Hallertau Mittlefruh and saaz in aroma. A gentle hop for subtle bitterness, aroma, and flavor."
   uses:
     - Light Lagers
     - Pilsners
@@ -1217,10 +1256,11 @@
     - finishing
   description: "The king of aroma hops in the US with its modest bittering value and the joyous harmony of flowers, fruit, earth and spice. A quality aroma hop with a smooth soft flavor."
   uses:
-    - American Ales
-    - American Lagers
-    - British Ales
-    - British Lagers
+    #- American Ales
+    #- American Lagers
+    #- British Ales
+    #- British Lagers
+    - "American/British Ales and Lagers"
   substitutes:
     - Fuggle
     - Styrian Golding
@@ -1256,6 +1296,7 @@
   types:
     - bittering
   description: "Earthy, spicy, pungent, with some citrus overtones. Not overwhelmingly citrus like Cascade. High on the bittering scale yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
+  alt_description: "Earthy, spicy, pungent, with some citrus overtones (not overwhelmingly citrus like Cascade). High bittering yet also valued for its oil content creates a hop that is an interesting dichotomy of sharp and herbal."
   uses:
     - American Ales
     - American Stouts

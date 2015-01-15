@@ -62,10 +62,16 @@ COUNTRIES = {
     'AU' : 'AU',
     'Japan' : 'JP',
     'Poland' : 'PL',
+    'SI' : 'SI',
 }
 
 def fix_country(country):
     return COUNTRIES[country]
+
+def fix_descr(desc):
+    desc = desc.replace('uber alles', r'\"{u}ber alles')
+    desc = desc.replace('fruh', r'fr\"{u}h')
+    return desc
 
 def main():
     with open(IFILE, 'r+') as f:
@@ -80,7 +86,7 @@ def main():
         alpha = format_alpha(hop['alpha'])
         countries = ', '.join(map(fix_country, hop['countries']))
         types = ', '.join(map(fix_type, hop['types']))
-        description = hop['description']
+        description = fix_descr(hop.get('alt_description', hop['description']))
         beers = ', '.join(map(fix_beer, hop['uses']))
         lines.append(FMT % (x, y, name, alpha, description, beers, types, countries))
 
