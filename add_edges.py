@@ -93,7 +93,7 @@ class EdgeDrawer(object):
                  for (sr, sc), (dr, dc) in self.edges]
         paths = [p for p in paths if p is not None]
         # Makes sure adjacent hops are processed first
-        paths = sorted(paths, key=lambda p: len(p))
+        paths = sorted(paths, key=lambda p: 1e5*len(p) + abs(p[0][0] - p[-1][0]) + abs(p[0][1] - p[-1][1]))
         return paths
 
     def get_port(self, r, c, s, n):
@@ -118,7 +118,7 @@ class EdgeDrawer(object):
     def get_v(self, c, n):
         spacing = VWIDTH / (self.vchannels[c] + 1)
         x, _ = corner(0, c)
-        x -= spacing*(n + 1)
+        x -= spacing*(self.vchannels[c] - n)
         return x
 
     def get_h(self, r, n):
@@ -130,9 +130,12 @@ class EdgeDrawer(object):
     def get_paths(self):
         vcs = defaultdict(int)
         hcs = defaultdict(int)
-        pts = defaultdict(int)
+        pts = dict()
 
         abpaths = self.get_abstract_paths()
+        for key, value in self.ports.items():
+            pts[key] = value*[False]
+
         paths = []
 
         for abpath in abpaths:
@@ -141,7 +144,39 @@ class EdgeDrawer(object):
             last = None
             for r, c, s in abpath:
                 if s in 'NESW':
-                    x, y = self.get_port(r, c, s, pts[r, c, s])
+
+                    fromstart = None
+                    if last is None:
+                        if s in 'NS':
+                            if c < abpath[-1][1]:
+                                fromstart = False
+                            else:
+                                fromstart = True
+                        if s in 'EW':
+                            if r <= abpath[-1][0]:
+                                fromstart = False
+                            else:
+                                fromstart = True
+                    else:
+                        if s in 'NS':
+                            if c < abpath[0][1]:
+                                fromstart = False
+                            else:
+                                fromstart = True
+                        if s in 'EW':
+                            if r <= abpath[0][0]:
+                                fromstart = False
+                            else:
+                                fromstart = True
+
+                    openports = pts[r, c, s]
+                    if fromstart:
+                        n = openports.index(False)
+                    else:
+                        n = (len(openports)-1) - openports[::-1].index(False)
+                    x, y = self.get_port(r, c, s, n)
+                    pts[r, c, s][n] = True
+
                     if last is not None:
                         if last == 'V':
                             path[-1][1] = y
@@ -154,7 +189,6 @@ class EdgeDrawer(object):
                             y = max(y, path[-1][1])
                             path[-1][1] = y
                     path.append([x, y])
-                    pts[r, c, s] += 1
 
                 elif s == 'V':
                     x = self.get_v(c, vcs[c])
