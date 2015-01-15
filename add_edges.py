@@ -170,14 +170,25 @@ class EdgeDrawer(object):
                 self.ports[dr, dc, 'S'] += 1
 
         else:
-            return None
+            raise Exception('Missing case!')
 
         return path
 
     def get_abstract_paths(self):
         paths = [self.get_abstract_path(sr, sc, dr, dc)
                  for (sr, sc), (dr, dc) in self.edges]
-        paths = [p for p in paths if p is not None]
+
+        for r in range(9):
+            for c in range(10):
+                if (self.ports[r, c, 'S'] % 2) == (self.ports[r-1, c, 'N'] % 2):
+                    self.ports[r, c, 'S'] += 1
+                if (self.ports[r, c, 'N'] % 2) == (self.ports[r+1, c, 'S'] % 2):
+                    self.ports[r, c, 'N'] += 1
+                if (self.ports[r, c, 'E'] % 2) == (self.ports[r, c+1, 'W'] % 2):
+                    self.ports[r, c, 'E'] += 1
+                if (self.ports[r, c, 'W'] % 2) == (self.ports[r, c-1, 'E'] % 2):
+                    self.ports[r, c, 'W'] += 1
+
         # Makes sure adjacent hops are processed first
         paths = sorted(paths, key=lambda p: 1e5*len(p) + abs(p[0][0] - p[-1][0]) + abs(p[0][1] - p[-1][1]))
         return paths
