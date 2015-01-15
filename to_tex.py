@@ -8,6 +8,7 @@ import yaml
 
 IFILE = 'hops.yaml'
 OFILE = os.path.join('poster', 'hoplist.tex')
+PERMFILE = 'bestperm.txt'
 
 COLS = 10
 COLSKIP = 4.5
@@ -75,6 +76,12 @@ def fix_descr(desc):
     return desc
 
 def order_hops(hops):
+    if os.path.exists(PERMFILE):
+        with open(PERMFILE, 'r+') as f:
+            perm = [int(l.strip()) for l in f]
+        hops = [hops[p] for p in perm]
+        return hops
+
     hops = sorted(hops, key=lambda h: -np.average(h['alpha']))
     hops = sum((sorted(hops[COLS*i:COLS*i+COLS], key=lambda h: h['name']) for i in range(9)), [])
     return hops

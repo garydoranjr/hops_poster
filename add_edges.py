@@ -313,6 +313,14 @@ class EdgeDrawer(object):
 
         return paths
 
+    def sum_edges(self):
+        paths = self.get_paths()
+        total = 0
+        for path in paths:
+            for (x1, y1), (x2, y2) in zip(path[:-1], path[1:]):
+                total += (abs(x1 - x2) + abs(y1 - y2))
+        return total
+
     def draw_edges(self):
         paths = self.get_paths()
         lines = []
