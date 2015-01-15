@@ -74,12 +74,16 @@ def fix_descr(desc):
     desc = desc.replace('fruh', r'fr\"{u}h')
     return desc
 
+def order_hops(hops):
+    hops = sorted(hops, key=lambda h: -np.average(h['alpha']))
+    hops = sum((sorted(hops[COLS*i:COLS*i+COLS], key=lambda h: h['name']) for i in range(9)), [])
+    return hops
+
 def main():
     with open(IFILE, 'r+') as f:
         hops = yaml.load(f.read())
 
-    hops = sorted(hops, key=lambda h: -np.average(h['alpha']))
-    hops = sum((sorted(hops[COLS*i:COLS*i+COLS], key=lambda h: h['name']) for i in range(9)), [])
+    hops = order_hops(hops)
 
     lines = []
     for h, hop in enumerate(hops):

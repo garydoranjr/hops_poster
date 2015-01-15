@@ -143,7 +143,7 @@
     - Northern Brewer
     - Galena
     - Bramling Cross
-    - Mt. Rainier
+    #- Mt. Rainier
 
 - name: Calypso
   alpha: [10, 12]
@@ -171,7 +171,7 @@
   substitutes:
     - Amarillo
     - Centennial
-    - Ahtanum
+    - Anthanum
 
 - name: Centennial
   alpha: [9, 11]
@@ -783,8 +783,8 @@
   uses:
     - German Ales
     - German Lagers
-  substitutes:
-    - Noble
+  substitutes: []
+    #- Noble
 
 - name: Pacifica
   alpha: [5, 6]
@@ -935,7 +935,7 @@
     - Pilsners
     - Lagers
   substitutes:
-    - Czech Saaz
+    #- Czech Saaz
     - Tettnang
 
 - name: Santiam
@@ -1059,7 +1059,7 @@
     - Ales
   substitutes: []
 
-- name: Styrian Goldings
+- name: Styrian Golding
   alpha: [4, 6]
   countries:
     - SI
@@ -1206,7 +1206,7 @@
     - Weizens
   substitutes:
     - Magnum
-    - Hersbrucker
+    - Hersbrucker Hallertau
     - Taurus
 
 - name: Ultra
@@ -1219,8 +1219,8 @@
     - Pilsners
     - German Lagers
   substitutes:
-    - Hallertau
-    - Noble
+    - German Hallertau
+    #- Noble
     - Crystal
     - Liberty
     - Mt. Hood
