@@ -221,7 +221,7 @@
   countries: []
   types:
     - all purpose
-  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfruh, Tettnanger, EKG hybrid with distinctive citrus aroma."
+  description: "Very fruity citrus, peach, apricot, passion fruit, grapefruit, lime, melon, gooseberry, lychee fruit, pineapple, mango, papaya and other tropical fruit flavors and aromas. A very new high alpha Hallertauer Mittelfr\"{u}h, Tettnanger, EKG hybrid with distinctive citrus aroma."
   uses:
     - Pale Ales
     - IPAs
@@ -658,7 +658,7 @@
     - US
   types:
     - bittering
-  description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfruh, Late Grape, Belgium 31, and Fuggle. Newport hops were bred as a potential replacement to Galena based on their resistance to mildew. Widely used by the Rogue Brewery."
+  description: "Mild aroma. Fairly pungent, resiny flavor. An Oregon original derived from Brewers gold, Mittelfr\"{u}h, Late Grape, Belgium 31, and Fuggle. Newport hops were bred as a potential replacement to Galena based on their resistance to mildew. Widely used by the Rogue Brewery."
   uses: []
   substitutes:
     - Galena
@@ -669,7 +669,7 @@
     - New Zealand
   types:
     - finishing
-  description: "Bred from the German Hallertau Mittelfruh, this aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
+  description: "Bred from the German Hallertau Mittelfr\"{u}h, this aroma hop is characterized by woodsy, citrus notes and a clean taste that has staying power. Higher alpha makes it an acceptable bittering hop as well."
   uses:
     - Organic Pilsners
     - Lagers
@@ -914,7 +914,7 @@
     - US
   types:
     - finishing
-  description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfruh, Cascades, and who knows what else. Aroma is a suggestion of Tettnanger. Another product of Corvallis Oregon."
+  description: "Resembles a Noble hop aroma. Herbal. Floral. This is a mixture of Tettnanger, Mittelfr\"{u}h, Cascades, and who knows what else. Aroma is a suggestion of Tettnanger. Another product of Corvallis Oregon."
   uses:
     - American Lagers
     - German Lagers
@@ -1175,7 +1175,7 @@
   countries: []
   types:
     - finishing
-  description: "Newer domestic aroma variety with Saaz characteristics. Very fine, mild, spicy with floral notes. Bred as a substitute for Hallertauer Mittelfruh."
+  description: "Newer domestic aroma variety with Saaz characteristics. Very fine, mild, spicy with floral notes. Bred as a substitute for Hallertauer Mittelfr\"{u}h."
   uses:
     - Pilsners
     - German Lagers
@@ -1191,7 +1191,7 @@
   countries: []
   types:
     - finishing
-  description: "Slightly flowery, mild. Similar to Hallertau Mittlefruh and saaz in aroma. A gentle hop for subtle bitterness, aroma, and flavor."
+  description: "Slightly flowery, mild. Similar to Hallertau Mittlefr\"{u}h and saaz in aroma. A gentle hop for subtle bitterness, aroma, and flavor."
   uses:
     - Light Lagers
     - Pilsners

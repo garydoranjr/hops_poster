@@ -7,40 +7,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\definecolor{cwrublue}{rgb}{0.0392156863, 0.188235294, 0.305882353}
-\definecolor{cwrugray}{rgb}{0.415686275, 0.415686275, 0.415686275}
-
 \definecolor{yfibred}{rgb}{0.5, 0, 0}
 \definecolor{yfibgreen}{rgb}{0, 0.273, 0}
 \definecolor{yfibgold}{rgb}{0.695, 0.527, 0}
 
-\setbeamercolor{headline}{fg=cwrublue, bg=cwrublue}
-\setbeamercolor{footline}{fg=cwrugray, bg=cwrugray}
-\setbeamerfont{footline}{size=\large,series=\tt}
-\setbeamercolor{separation line}{bg=cwrublue}
-\setbeamercolor{title in headline}{fg=white}
-\setbeamercolor{author in headline}{fg=white}
-\setbeamercolor{institute in headline}{fg=white}
-
-\setbeamercolor{framesubtitle}{fg=white, bg=cwrublue}
-\setbeamercolor{author in head/foot}{fg=white, bg=cwrublue}
-\setbeamercolor{title in head/foot}{bg=white, fg=cwrublue}
-
-\setbeamercolor*{normal text}{fg=black, bg=white}
-\setbeamercolor*{block body}{bg=white, fg=black}
-\setbeamercolor*{block title}{fg=white,bg=cwrugray}
-\setbeamerfont{block title}{size=\large,series=\bf}
-\setbeamercolor{upper separation line head}{fg=black}
-
-\setbeamercolor*{example body}{fg=white,bg=black}
-\setbeamercolor*{example text}{fg=white,bg=black}
-\setbeamercolor*{example title}{bg=white,fg=black}
-
-\setbeamercolor{alerted text}{fg=cwrublue}
-
-\setbeamercolor{structure}{fg=cwrugray}
-
-\setbeamertemplate{itemize items}[triangle]
 \setbeamertemplate{navigation symbols}{}  % no navigation on a poster
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,13 +48,13 @@
     \draw [color=yfibgreen] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
     \draw [color=yfibgreen] (#1in, #2in+\hopheight) node[anchor=north west] {\footnotesize{\textbf{#3}}};
     \draw [color=yfibgreen] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\footnotesize{#4}};
-    \draw [color=yfibgreen] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
+    \draw [color=yfibgreen] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip+0.2em) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
     \draw [color=yfibgold] (#1in+0.5\hopwidth, #2in) node[text width=\hopwidth, anchor=south, text badly centered] {\scriptsize{#6}\par};
 
     \draw [color=yfibgold] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\scriptsize{#7}}};
     \draw [color=yfibgold] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\scriptsize{#8}};
 
-    \draw [color=yfibgreen] (#1in, #2in+\hopheight-\hoptskip) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip);
+    \draw [color=yfibgreen] (#1in, #2in+\hopheight-\hoptskip+0.2em) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip+0.2em);
 }
 
 \setbeamertemplate{background canvas}{  
