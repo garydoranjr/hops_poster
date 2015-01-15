@@ -8,10 +8,10 @@ import yaml
 IFILE = 'hops.yaml'
 OFILE = os.path.join('poster', 'hoplist.tex')
 
-ROWS = 10
-COLSKIP = 4.25
-ROWSKIP = 2.25
-START = 1
+ROWS = 9
+COLSKIP = 4.5
+ROWSKIP = 3
+START = 1.5
 
 FMT = r'\hop{%.1f}{%.1f}{%s}{%s}{%s}{%s}{%s}{%s}'
 

@@ -1089,14 +1089,14 @@
   substitutes:
     - Simcoe
 
-- name: Sun
-  alpha: [15, 16]
-  countries: []
-  types:
-    - bittering
-  description: "A super alpha hop. Not much info on this one."
-  uses: []
-  substitutes: []
+#- name: Sun
+#  alpha: [15, 16]
+#  countries: []
+#  types:
+#    - bittering
+#  description: "A super alpha hop. Not much info on this one."
+#  uses: []
+#  substitutes: []
 
 - name: Super Alpha
   alpha: [10, 12]

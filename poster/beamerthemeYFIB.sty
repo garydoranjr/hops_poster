@@ -45,20 +45,33 @@
 \setlength{\hoptskip}{0.33\hopheight}
 
 \newcommand{\hop}[8]{
-    \draw [color=yfibgreen] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
+    \draw [color=yfibgreen, line width=3pt] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
     \draw [color=yfibgreen] (#1in, #2in+\hopheight) node[anchor=north west] {\footnotesize{\textbf{#3}}};
     \draw [color=yfibgreen] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\footnotesize{#4}};
     \draw [color=yfibgreen] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip+0.2em) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
     \draw [color=yfibgold] (#1in+0.5\hopwidth, #2in) node[text width=\hopwidth, anchor=south, text badly centered] {\scriptsize{#6}\par};
 
-    \draw [color=yfibgold] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\scriptsize{#7}}};
-    \draw [color=yfibgold] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\scriptsize{#8}};
+    \draw [color=yfibgold] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\scriptsize{#7\vphantom{g}}}};
+    \draw [color=yfibgold] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\scriptsize{#8\vphantom{g}}};
 
-    \draw [color=yfibgreen] (#1in, #2in+\hopheight-\hoptskip+0.2em) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip+0.2em);
+    \draw [color=yfibgreen, line width=3pt] (#1in, #2in+\hopheight-\hoptskip+0.2em) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip+0.2em);
 }
 
 \setbeamertemplate{background canvas}{  
-\input{background.tex}
+\begin{tikzpicture}[scale=1.0]
+    \clip (0,0) rectangle (\paperwidth,\paperheight);
+    \fill[color=yfibgreen] (\framespacing,\framespacing) rectangle (\paperwidth-\framespacing,\framespacing+\framethickness);
+    \fill[color=yfibgreen] (\paperwidth-\framespacing,\framespacing) rectangle (\paperwidth-\framespacing-\framethickness,\textheight-\framespacing);
+    \fill[color=yfibgreen] (\framespacing,\framespacing) rectangle (\framespacing+\framethickness,\textheight-\framespacing);
+    \fill[color=yfibgreen] (\framespacing,\textheight-\framespacing) rectangle (\paperwidth-\framespacing,\textheight-\framespacing-\framethickness);
+
+    \node [anchor=north west] (logo) at (2\framespacing+\framethickness, \paperheight-2\framespacing-\framethickness) {\includegraphics[height=3.75in]{figs/yfib.pdf}};
+    \node [anchor=south west] (title) at (16in, \paperheight-2\framespacing-\framethickness-3.0in) {\includegraphics[height=1.75in]{figs/title.pdf}};
+    \node [anchor=north west,color=yfibgold] (url) at (16in, \paperheight-2\framespacing-\framethickness-3.0in) {\huge{\textbf{\url{http://www.homebrewstuff.com/hop-profiles}}}};
+
+  \input{hoplist.tex}
+
+\end{tikzpicture}
 }
 
 \mode<all>
