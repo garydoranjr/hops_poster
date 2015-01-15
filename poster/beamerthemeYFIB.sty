@@ -10,6 +10,10 @@
 \definecolor{cwrublue}{rgb}{0.0392156863, 0.188235294, 0.305882353}
 \definecolor{cwrugray}{rgb}{0.415686275, 0.415686275, 0.415686275}
 
+\definecolor{yfibred}{rgb}{0.5, 0, 0}
+\definecolor{yfibgreen}{rgb}{0, 0.273, 0}
+\definecolor{yfibgold}{rgb}{0.695, 0.527, 0}
+
 \setbeamercolor{headline}{fg=cwrublue, bg=cwrublue}
 \setbeamercolor{footline}{fg=cwrugray, bg=cwrugray}
 \setbeamerfont{footline}{size=\large,series=\tt}
@@ -64,26 +68,23 @@
 \newlength{\framespacing}
 \setlength{\framespacing}{\beamer@rightmargin}
 \newlength{\hopwidth}
-\setlength{\hopwidth}{5in}
+\setlength{\hopwidth}{3.25in}
 \newlength{\hopheight}
-\setlength{\hopheight}{3in}
-%\newlength{\hopbskip}
-%\setlength{\hopbskip}{0.1\hop}
+\setlength{\hopheight}{2in}
 \newlength{\hoptskip}
-\setlength{\hoptskip}{0.35\hopheight}
+\setlength{\hoptskip}{0.33\hopheight}
 
 \newcommand{\hop}[8]{
-    \draw [] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
-    \draw [] (#1in, #2in+\hopheight) node[anchor=north west] {\small{\textbf{#3}}};
-    \draw [] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\small{#4}};
-    \draw [] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
-    \draw [] (#1in+0.5\hopwidth, #2in) node[text width=0.9\hopwidth, anchor=south, text badly centered] {\scriptsize{#6}\par};
-    %\draw (#1in, #2in+\hopbskip) -- (#1in+\hopwidth, #2in+\hopbskip);
+    \draw [color=yfibgreen] (#1in, #2in) rectangle (#1in+\hopwidth,#2in+\hopheight);
+    \draw [color=yfibgreen] (#1in, #2in+\hopheight) node[anchor=north west] {\footnotesize{\textbf{#3}}};
+    \draw [color=yfibgreen] (#1in+\hopwidth, #2in+\hopheight) node[anchor=north east] {\footnotesize{#4}};
+    \draw [color=yfibgreen] (#1in+0.5\hopwidth, #2in+\hopheight-\hoptskip) node[text width=0.9\hopwidth, anchor=north, text badly centered] {\tiny{#5}\par};
+    \draw [color=yfibgold] (#1in+0.5\hopwidth, #2in) node[text width=\hopwidth, anchor=south, text badly centered] {\scriptsize{#6}\par};
 
-    \draw [] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\footnotesize{#7}}};
-    \draw [] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\footnotesize{#8}};
+    \draw [color=yfibgold] (#1in, #2in+\hopheight-\hoptskip) node[anchor=south west] {\textit{\scriptsize{#7}}};
+    \draw [color=yfibgold] (#1in+\hopwidth, #2in+\hopheight-\hoptskip) node[anchor=south east] {\scriptsize{#8}};
 
-    \draw (#1in, #2in+\hopheight-\hoptskip) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip);
+    \draw [color=yfibgreen] (#1in, #2in+\hopheight-\hoptskip) -- (#1in+\hopwidth, #2in+\hopheight-\hoptskip);
 }
 
 \setbeamertemplate{background canvas}{  

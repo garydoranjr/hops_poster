@@ -1,15 +1,16 @@
 #!/usr/bin/env python
+import os
 from collections import defaultdict
 import yaml
     
 #\hop{10}{10}{Admiral}{11--15\%}{Said to be citrusy, orange flavored. A good compliment hop to Targets. Good dual purpose hop.}{English IPAs, Ales}{All Purpose}{UK, US}
 
 IFILE = 'hops.yaml'
-OFILE = 'hops.tex'
+OFILE = os.path.join('poster', 'hoplist.tex')
 
-ROWS = 9
-COLSKIP = 5.5
-ROWSKIP = 3.5
+ROWS = 10
+COLSKIP = 4.25
+ROWSKIP = 2.25
 START = 1
 
 FMT = r'\hop{%.1f}{%.1f}{%s}{%s}{%s}{%s}{%s}{%s}'
@@ -17,7 +18,6 @@ FMT = r'\hop{%.1f}{%.1f}{%s}{%s}{%s}{%s}{%s}{%s}'
 def fix_name(name):
     name = name.replace('. ', r'.\ ')
     name = name.replace('fruh', r'fr\"{u}h')
-    name = name.replace('New Zealand', 'NZ')
     return name
 
 def format_number(flt):
