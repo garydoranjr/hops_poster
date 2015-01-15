@@ -33,7 +33,17 @@ class EdgeDrawer(object):
     def get_abstract_path(self, sr, sc, dr, dc):
         path = []
         if sc == dc:
-            if islastcol(sc):
+            if sr == (dr + 1):
+                path.append((sr, sc, 'S'))
+                path.append((dr, dc, 'N'))
+                self.ports[sr, sc, 'S'] += 1
+                self.ports[dr, dc, 'N'] += 1
+            elif dr == (sr + 1):
+                path.append((sr, sc, 'N'))
+                path.append((dr, dc, 'S'))
+                self.ports[sr, sc, 'N'] += 1
+                self.ports[dr, dc, 'S'] += 1
+            elif islastcol(sc):
                 path.append((sr, sc, 'W'))
                 path.append((None, sc, 'V'))
                 path.append((dr, dc, 'W'))
@@ -49,28 +59,42 @@ class EdgeDrawer(object):
                 self.ports[dr, dc, 'E'] += 1
 
         elif sr == dr:
-            if islastrow(sr):
+            if sc == (dc + 1):
+                path.append((sr, sc, 'W'))
+                path.append((dr, dc, 'E'))
+                self.ports[sr, sc, 'W'] += 1
+                self.ports[dr, dc, 'E'] += 1
+            elif dc == (sc + 1):
+                path.append((sr, sc, 'E'))
+                path.append((dr, dc, 'W'))
+                self.ports[sr, sc, 'E'] += 1
+                self.ports[dr, dc, 'W'] += 1
+            #elif islastrow(sr):
+            #    path.append((sr, sc, 'S'))
+            #    path.append((sr, None, 'H'))
+            #    path.append((dr, dc, 'S'))
+            #    self.hchannels[sr] += 1
+            #    self.ports[sr, sc, 'S'] += 1
+            #    self.ports[dr, dc, 'S'] += 1
+            else:
                 path.append((sr, sc, 'S'))
                 path.append((sr, None, 'H'))
                 path.append((dr, dc, 'S'))
                 self.hchannels[sr] += 1
                 self.ports[sr, sc, 'S'] += 1
                 self.ports[dr, dc, 'S'] += 1
-            else:
-                path.append((sr, sc, 'N'))
-                path.append((sr+1, None, 'H'))
-                path.append((dr, dc, 'N'))
-                self.hchannels[sr+1] += 1
-                self.ports[sr, sc, 'N'] += 1
-                self.ports[dr, dc, 'N'] += 1
         else:
             return None
 
         return path
 
     def get_abstract_paths(self):
-        return [self.get_abstract_path(sr, sc, dr, dc)
-                for (sr, sc), (dr, dc) in self.edges]
+        paths = [self.get_abstract_path(sr, sc, dr, dc)
+                 for (sr, sc), (dr, dc) in self.edges]
+        paths = [p for p in paths if p is not None]
+        # Makes sure adjacent hops are processed first
+        paths = sorted(paths, key=lambda p: len(p))
+        return paths
 
     def get_port(self, r, c, s, n):
         x, y = corner(r, c)
@@ -118,10 +142,17 @@ class EdgeDrawer(object):
             for r, c, s in abpath:
                 if s in 'NESW':
                     x, y = self.get_port(r, c, s, pts[r, c, s])
-                    if last == 'V':
-                        path[-1][1] = y
-                    if last == 'H':
-                        path[-1][0] = x
+                    if last is not None:
+                        if last == 'V':
+                            path[-1][1] = y
+                        if last == 'H':
+                            path[-1][0] = x
+                        if last in 'NS':
+                            x = min(x, path[-1][0])
+                            path[-1][0] = x
+                        if last in 'EW':
+                            y = max(y, path[-1][1])
+                            path[-1][1] = y
                     path.append([x, y])
                     pts[r, c, s] += 1
 
