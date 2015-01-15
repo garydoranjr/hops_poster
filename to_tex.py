@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import numpy as np
 from collections import defaultdict
 import yaml
     
@@ -8,7 +9,7 @@ import yaml
 IFILE = 'hops.yaml'
 OFILE = os.path.join('poster', 'hoplist.tex')
 
-ROWS = 9
+COLS = 10
 COLSKIP = 4.5
 ROWSKIP = 3
 START = 1.5
@@ -77,10 +78,13 @@ def main():
     with open(IFILE, 'r+') as f:
         hops = yaml.load(f.read())
 
+    hops = sorted(hops, key=lambda h: -np.average(h['alpha']))
+    hops = sum((sorted(hops[COLS*i:COLS*i+COLS], key=lambda h: h['name']) for i in range(9)), [])
+
     lines = []
     for h, hop in enumerate(hops):
-        col = h / ROWS
-        row = h % ROWS
+        col = h % COLS
+        row = h / COLS
         x, y = (START + col*COLSKIP), (START + row*ROWSKIP)
         name = fix_name(hop['name'])
         alpha = format_alpha(hop['alpha'])
