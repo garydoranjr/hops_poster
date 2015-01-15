@@ -69,13 +69,6 @@ class EdgeDrawer(object):
                 path.append((dr, dc, 'W'))
                 self.ports[sr, sc, 'E'] += 1
                 self.ports[dr, dc, 'W'] += 1
-            #elif islastrow(sr):
-            #    path.append((sr, sc, 'S'))
-            #    path.append((sr, None, 'H'))
-            #    path.append((dr, dc, 'S'))
-            #    self.hchannels[sr] += 1
-            #    self.ports[sr, sc, 'S'] += 1
-            #    self.ports[dr, dc, 'S'] += 1
             else:
                 path.append((sr, sc, 'S'))
                 path.append((sr, None, 'H'))
@@ -83,6 +76,99 @@ class EdgeDrawer(object):
                 self.hchannels[sr] += 1
                 self.ports[sr, sc, 'S'] += 1
                 self.ports[dr, dc, 'S'] += 1
+
+        elif sc == (dc + 1):
+            path.append((sr, sc, 'W'))
+            path.append((None, sc, 'V'))
+            path.append((dr, dc, 'E'))
+            self.vchannels[sc] += 1
+            self.ports[sr, sc, 'W'] += 1
+            self.ports[dr, dc, 'E'] += 1
+
+        elif dc == (sc + 1):
+            path.append((sr, sc, 'E'))
+            path.append((None, dc, 'V'))
+            path.append((dr, dc, 'W'))
+            self.vchannels[dc] += 1
+            self.ports[sr, sc, 'E'] += 1
+            self.ports[dr, dc, 'W'] += 1
+
+        elif dr == (sr + 1):
+            path.append((sr, sc, 'N'))
+            path.append((dr, None, 'H'))
+            path.append((dr, dc, 'S'))
+            self.hchannels[dr] += 1
+            self.ports[sr, sc, 'N'] += 1
+            self.ports[dr, dc, 'S'] += 1
+
+        # Don't need sr == (dr + 1), since sr <= dr by sorting
+
+        elif dc > sc:
+            overfirst = np.max([
+                self.ports[sr, sc, 'N'],
+                self.hchannels[sr+1],
+                self.vchannels[dc],
+                self.ports[dr, dc, 'W']
+            ])
+            upfirst = np.max([
+                self.ports[sr, sc, 'E'],
+                self.vchannels[sc+1],
+                self.hchannels[dr],
+                self.ports[dr, dc, 'S']
+            ])
+
+            if overfirst <= upfirst:
+                path.append((sr, sc, 'N'))
+                path.append((sr+1, None, 'H'))
+                path.append((None, dc, 'V'))
+                path.append((dr, dc, 'W'))
+                self.ports[sr, sc, 'N'] += 1
+                self.hchannels[sr+1] += 1
+                self.vchannels[dc] += 1
+                self.ports[dr, dc, 'W'] += 1
+            else:
+                path.append((sr, sc, 'E'))
+                path.append((None, sc+1, 'V'))
+                path.append((dr, None, 'H'))
+                path.append((dr, dc, 'S'))
+                self.ports[sr, sc, 'E'] += 1
+                self.vchannels[sc+1] += 1
+                self.hchannels[dr] += 1
+                self.ports[dr, dc, 'S'] += 1
+
+        elif dc < sc:
+            overfirst = np.max([
+                self.ports[sr, sc, 'N'],
+                self.hchannels[sr+1],
+                self.vchannels[dc+1],
+                self.ports[dr, dc, 'E']
+            ])
+            upfirst = np.max([
+                self.ports[sr, sc, 'W'],
+                self.vchannels[sc],
+                self.hchannels[dr],
+                self.ports[dr, dc, 'S']
+            ])
+
+            if overfirst <= upfirst:
+                path.append((sr, sc, 'N'))
+                path.append((sr+1, None, 'H'))
+                path.append((None, dc+1, 'V'))
+                path.append((dr, dc, 'E'))
+                self.ports[sr, sc, 'N'] +=1 
+                self.hchannels[sr+1] += 1
+                self.vchannels[dc+1] += 1
+                self.ports[dr, dc, 'E'] += 1
+            else:
+                path.append((sr, sc, 'W'))
+                path.append((None, sc, 'V'))
+                path.append((dr, None, 'H'))
+                path.append((dr, dc, 'S'))
+                self.ports[sr, sc, 'W'] += 1
+                self.vchannels[sc] += 1
+                self.hchannels[dr] += 1
+                self.ports[dr, dc, 'S'] += 1
+
         else:
             return None
 
@@ -193,6 +279,8 @@ class EdgeDrawer(object):
                 elif s == 'V':
                     x = self.get_v(c, vcs[c])
                     y = path[-1][1]
+                    if last == 'H':
+                        path[-1][0] = x
                     path.append([x, y])
                     path.append([x, None])
                     vcs[c] += 1
@@ -200,6 +288,8 @@ class EdgeDrawer(object):
                 elif s == 'H':
                     y = self.get_h(r, hcs[r])
                     x = path[-1][0]
+                    if last == 'V':
+                        path[-1][1] = y
                     path.append([x, y])
                     path.append([None, y])
                     hcs[r] += 1
