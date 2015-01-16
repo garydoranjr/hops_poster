@@ -181,18 +181,12 @@ class EdgeDrawer(object):
 
         for r in range(9):
             for c in range(10):
-                if (gcd(self.ports[r, c, 'S'] + 1, self.ports[r-1, c, 'N'] + 1) > 1 and
-                    ((self.ports[r, c, 'S'] > 1) or (self.ports[r-1, c, 'N'] > 1))):
-                    self.ports[r, c, 'S'] += 1
                 if (gcd(self.ports[r, c, 'N'] + 1, self.ports[r+1, c, 'S'] + 1) > 1 and
                     ((self.ports[r, c, 'N'] > 1) or (self.ports[r+1, c, 'S'] > 1))):
                     self.ports[r, c, 'N'] += 1
                 if (gcd(self.ports[r, c, 'E'] + 1, self.ports[r, c+1, 'W'] + 1) > 1 and
                     ((self.ports[r, c, 'E'] > 1) or (self.ports[r, c+1, 'W'] > 1))):
                     self.ports[r, c, 'E'] += 1
-                if (gcd(self.ports[r, c, 'W'] + 1, self.ports[r, c-1, 'E'] + 1) > 1 and
-                    ((self.ports[r, c, 'W'] > 1) or (self.ports[r, c-1, 'E'] > 1))):
-                    self.ports[r, c, 'W'] += 1
 
         # Makes sure adjacent hops are processed first
         paths = sorted(paths, key=lambda p: 1e5*len(p) + abs(p[0][0] - p[-1][0]) + abs(p[0][1] - p[-1][1]))
@@ -323,7 +317,7 @@ class EdgeDrawer(object):
         total = 0
         for path in paths:
             for (x1, y1), (x2, y2) in zip(path[:-1], path[1:]):
-                total += (abs(x1 - x2) + abs(y1 - y2))
+                total += (0.706*abs(x1 - x2) + abs(y1 - y2))
         return total
 
     def draw_edges(self):
