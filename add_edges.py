@@ -182,10 +182,12 @@ class EdgeDrawer(object):
         for r in range(9):
             for c in range(10):
                 if (gcd(self.ports[r, c, 'N'] + 1, self.ports[r+1, c, 'S'] + 1) > 1 and
-                    ((self.ports[r, c, 'N'] > 1) or (self.ports[r+1, c, 'S'] > 1))):
+                    ((self.ports[r, c, 'N'] > 1) or (self.ports[r+1, c, 'S'] > 1) or
+                    (((r, c), (r+1, c)) not in self.edges))):
                     self.ports[r, c, 'N'] += 1
                 if (gcd(self.ports[r, c, 'E'] + 1, self.ports[r, c+1, 'W'] + 1) > 1 and
-                    ((self.ports[r, c, 'E'] > 1) or (self.ports[r, c+1, 'W'] > 1))):
+                    ((self.ports[r, c, 'E'] > 1) or (self.ports[r, c+1, 'W'] > 1) or
+                      (((r, c), (r, c+1)) not in self.edges))):
                     self.ports[r, c, 'E'] += 1
 
         # Makes sure adjacent hops are processed first
@@ -348,7 +350,7 @@ def main():
         for dest in hop['substitutes']:
             edges.add(frozenset([source, dest]))
 
-    edges = [sorted(mapping[node] for node in edge) for edge in edges]
+    edges = [tuple(sorted(mapping[node] for node in edge)) for edge in edges]
     drawer = EdgeDrawer(edges)
 
     with open(OFILE, 'wb+') as f:
