@@ -3,6 +3,7 @@ import os
 import numpy as np
 from collections import defaultdict
 import yaml
+from fractions import gcd
 
 from to_tex import IFILE, COLS, COLSKIP, ROWSKIP, START, order_hops
 
@@ -180,13 +181,17 @@ class EdgeDrawer(object):
 
         for r in range(9):
             for c in range(10):
-                if (self.ports[r, c, 'S'] % 2) == (self.ports[r-1, c, 'N'] % 2):
+                if (gcd(self.ports[r, c, 'S'] + 1, self.ports[r-1, c, 'N'] + 1) > 1 and
+                    ((self.ports[r, c, 'S'] > 1) or (self.ports[r-1, c, 'N'] > 1))):
                     self.ports[r, c, 'S'] += 1
-                if (self.ports[r, c, 'N'] % 2) == (self.ports[r+1, c, 'S'] % 2):
+                if (gcd(self.ports[r, c, 'N'] + 1, self.ports[r+1, c, 'S'] + 1) > 1 and
+                    ((self.ports[r, c, 'N'] > 1) or (self.ports[r+1, c, 'S'] > 1))):
                     self.ports[r, c, 'N'] += 1
-                if (self.ports[r, c, 'E'] % 2) == (self.ports[r, c+1, 'W'] % 2):
+                if (gcd(self.ports[r, c, 'E'] + 1, self.ports[r, c+1, 'W'] + 1) > 1 and
+                    ((self.ports[r, c, 'E'] > 1) or (self.ports[r, c+1, 'W'] > 1))):
                     self.ports[r, c, 'E'] += 1
-                if (self.ports[r, c, 'W'] % 2) == (self.ports[r, c-1, 'E'] % 2):
+                if (gcd(self.ports[r, c, 'W'] + 1, self.ports[r, c-1, 'E'] + 1) > 1 and
+                    ((self.ports[r, c, 'W'] > 1) or (self.ports[r, c-1, 'E'] > 1))):
                     self.ports[r, c, 'W'] += 1
 
         # Makes sure adjacent hops are processed first
